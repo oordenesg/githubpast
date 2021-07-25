@@ -1,5 +1,7 @@
 # How to Python
 
+## Introduction 
+
 Python is one of the most useful programming languages due to its flexibility and speed. Currently, Python programming has become one of the most demanding professional skills. To start with this new languague, we can add our first line of code. 
 
 ```python
@@ -50,3 +52,36 @@ runtime = 2
 # Define the rating_out_of_10 float variable below: 
 rating_out_of_10 = 7.6
 ```
+
+Since we've already stored some numerical variables, we can also performe some calculations using programming language. Python performs addition, substraction, multiplication and division with *+, -, *, /*.
+
+```python
+# Prints "500"
+print(573 - 74 + 1)
+ 
+# Prints "50"
+print(25 * 2)
+ 
+# Prints "2.0"
+print(10 / 5)
+```
+It is important to be careful when dividing by 0. In thi case, Python will raise a *ZeroDivisionError*.
+
+When performing arithmetic operations on variables does not change the variable. Two variables can be added together, divided by 2, and multiplied by a third variable without Python distinguishing between the variables and literals. Let's see an example
+
+```python
+coffee_price = 1.50
+number_of_coffees = 4
+ 
+print(coffee_price * number_of_coffees) # Prints "6.0"
+print(coffee_price) # Prints "1.5"
+print(number_of_coffees) # Prints "4"
+ 
+coffee_price = 2.00 # Updating the price 
+ 
+print(coffee_price * number_of_coffees) # Prints "8.0"
+print(coffee_price) # Prints "2.0"
+print(number_of_coffees) # Prints "4"
+```
+
+
