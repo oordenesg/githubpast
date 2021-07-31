@@ -100,4 +100,28 @@ print(29 % 5) # Prints 4 because 29 / 5 is 5 with a remainder of 4
 print(32 % 3) # Prints 2 because 32 / 3 is 10 with a remainder of 2
 print(44 % 2) # Modulo by 2 returns 0 for even numbers and 1 for odd numbers
 ```
+The + operator doesn’t just add two numbers, it can also “add” two strings! The process of combining two strings is called string concatenation. Performing string concatenation creates a brand new string. Let's see an example
+
+```python
+greeting_text = "Hey there!"
+question_text = "How are you doing?"
+full_text = greeting_text + question_text
+print(full_text) # Prints "Hey there!How are you doing?"
+
+# To solve this, we can use " "
+
+full_text = greeting_text + " " + question_text
+print(full_text) # Prints "Hey there! How are you doing?"
+
+# Let's see a new example
+
+birthday_string = "I am "
+age = 10
+birthday_string_2 = " years old today!"
+full_birthday_string = birthday_string + str(age) + birthday_string_2
+# We have 2 options: 
+print(full_birthday_string) # Prints "I am 10 years old today!"
+# or 
+print(birthday_string, age, birthday_string_2) # This also prints "I am 10 years old today!"
+```
 
