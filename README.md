@@ -84,4 +84,20 @@ print(coffee_price) # Prints "2.0"
 print(number_of_coffees) # Prints "4"
 ```
 
+If we want to work with exponents, Python can also perform this operation. Typing superscript numbers isn't always easy on modern keyboards. To do this opereation, we use te notation "**".
+
+```python
+print(2 ** 10) # 2 to the 10th power, or 1024
+print(8 ** 2) # 8 squared, or 64
+print(9 ** 3) # 9 * 9 * 9, 9 cubed, or 729
+print(4 ** 0.5) # We can even perform fractional exponents
+```
+
+In Python can also obtained the remainder of a division calculation. This is called "modulo operator". If the number is divisible, then the result of the modulo operator will be 0. 
+
+```python
+print(29 % 5) # Prints 4 because 29 / 5 is 5 with a remainder of 4
+print(32 % 3) # Prints 2 because 32 / 3 is 10 with a remainder of 2
+print(44 % 2) # Modulo by 2 returns 0 for even numbers and 1 for odd numbers
+```
 
