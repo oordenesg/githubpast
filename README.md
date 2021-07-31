@@ -124,4 +124,19 @@ print(full_birthday_string) # Prints "I am 10 years old today!"
 # or 
 print(birthday_string, age, birthday_string_2) # This also prints "I am 10 years old today!"
 ```
+We can update variables using a shorthand called "plus equal".  When we have a number saved in a variable and want to add to the current value of the variable, we can use the += operator.
 
+```python
+
+number_of_miles_hiked = 12
+number_of_miles_hiked += 2
+print(number_of_miles_hiked) # Prints 14
+
+#We can use this operator with strings
+
+hike_caption = "What an amazing time to walk through nature!"
+ 
+# Almost forgot the hashtags!
+hike_caption += " #nofilter"
+hike_caption += " #blessed"
+```
