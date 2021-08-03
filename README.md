@@ -140,3 +140,21 @@ hike_caption = "What an amazing time to walk through nature!"
 hike_caption += " #nofilter"
 hike_caption += " #blessed"
 ```
+
+## Boolean Expressions
+
+When we want to built control flows into our programs, we want to be able to check if somethind is true or not. To do this, we can use boolean expression. These are statements that can either be True or False. Let's check the statement "Today is a weekday". This expression can be True if today is Tuesday, or it can be False if today is Saturday. There are no other options. However, the statement "Friday is the best day of the week" can be true or false depending on personal preferences.
+
+Now that we understand what booleans expressions are, let's learn how to create them in Python. To do this we can use relational operators. The two relational operators we’ll cover first are:
+
+1. Equals: ==
+2. Not equals: !=
+
+These operators compare two items and return True or False if they are equal or not. We can create boolean expressions by comparing two values using these operators:
+
+```python
+1 == 1     # True
+2 != 4     # True
+3 == 5     # False
+'7' == 7   # False
+```
