@@ -158,3 +158,19 @@ These operators compare two items and return True or False if they are equal or 
 3 == 5     # False
 '7' == 7   # False
 ```
+If we write True or False in the code editor, they will appear in a different color than other variables.  This is because these True or False are their own sepcial type: bool. These are the only bool types that we can us in Python. There are several ways to use True or Fals. Let's check some of them. 
+
+```python
+# Set a variable equal to a boolean expression
+set_to_true = True
+set_to_false = False
+
+# another option
+
+bool_one = 5 != 7 
+bool_two = 1 + 1 != 2
+bool_three = 3 * 3 == 9
+```
+
+
+
