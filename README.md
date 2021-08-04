@@ -171,6 +171,24 @@ bool_one = 5 != 7
 bool_two = 1 + 1 != 2
 bool_three = 3 * 3 == 9
 ```
+Booleans are important expression since they are relevant when building blocks of conditional statements.  Let's think about this situation. If it is raining, then bring an umbrella. Can we use a boolean expression here? Yes, we can. Right, "it is raining" is the boolean expression, and this conditional statement is checking to see if it is True. So, we can say if "it is raining" == True then the rest of the conditional statement will be executed and you will bring an umbrella.
 
+This is the form of a conditional statement:  If [it is raining], then [bring an umbrella]
 
+In Python, this conditiona statement looks very similar.
+
+```python
+if is_raining:
+  print("bring an umbrella")
+  
+### A new example
+
+user_name = "angela_catlady_87"
+
+if user_name == "Dave":
+  print("Get off my computer Dave!")
+
+if user_name == "angela_catlady_87":
+  print("I know it is you, Dave! Go away!")
+```
 
