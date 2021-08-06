@@ -218,5 +218,19 @@ credits = 120
 if credits >= 120:
   print("You have enough credits to graduate!")
 ```
+In some cases, we need to check more than one conditional statement. In these cases, we can build a large boolean expression using boolean operators. These operators (also known as logical operators) combine smaller boolean expressions into larger boolean expressions. There are three boolean operators that we will cover: **and**,**or**,**not**. Now, let's use theres operators.
 
+```python
+(1 + 1 == 2) and (2 + 2 == 4)   # True
+(1 > 9) and (5 != 6)            # False
+(1 + 1 == 2) and (2 < 1)        # False 
+(0 == 10) and (1 + 1 == 1)      # False
+
+## Using the last example
+
+credits = 120
+gpa = 3.4
+if credits >= 120 and gpa >= 2:
+  print("You meet the requirements to graduate!")
+```
 
