@@ -192,3 +192,31 @@ if user_name == "angela_catlady_87":
   print("I know it is you, Dave! Go away!")
 ```
 
+Now that we have covered conditional statemetns, it is important to explore in more ways to use boolean expressions. In python, we can use relational operations to evaluate numbers or conditions. The commons are:
+
+1. > greater than
+2- >= greater than or equal to
+3. < less than
+4. <= less than or equal to
+
+We can use them in functions or loops to evaluate if our data meet some conditions or not. We will see more them more often in the future. Now, let's concentrate in relational operations. Let's imagine that we're running a movie streaming platform and we want to check  if our users are over 13 or not. In Python, we can write a condition to evaluate this.
+
+```python
+if age <= 13:
+  print("Sorry, parental control required")
+```
+
+This function will compare the age (as an input) with the condition "<=13". If this is true, then print("Sorry, parental control required"). Let's see more examples.
+
+```python
+x = 20
+y = 20
+if x == y:  
+  print("These numbers are the same")
+
+credits = 120
+if credits >= 120:
+  print("You have enough credits to graduate!")
+```
+
+
