@@ -256,3 +256,36 @@ not 1 + 1 == 2  # False
 not 7 < 0       # True
 ```
 
+ Once we start including lots of if statements in a function the code becomes a little cluttered and clunky. Luckily, there are other tools we can use to build control flow. else statements allow us to elegantly describe what we want our code to do when certain conditions are not met. else statements always appear in conjunction with if statements. Consider our waking-up example to see how this works:
+ 
+ ```python
+ if weekday:
+  print("wake up at 6:30")
+else:
+  print("sleep in")
+  
+ ## Using the previous example
+ 
+credits = 120
+gpa = 1.9
+
+if (credits >= 120) and (gpa >= 2.0):
+  print("You meet the requirements to graduate!")
+else:
+    print("You do not meet the requirements to graduate.")
+ ```
+
+We can use elif statements to control the order we want our program to check each of our conditional statements. First, the if statement is checked, then each elif statement is checked from top to bottom, then finally the else code is executed if none of the previous conditions have been met.
+
+```python
+print("Thank you for the donation!")
+ 
+if donation >= 1000:
+  print("You've achieved platinum status")
+elif donation >= 500:
+  print("You've achieved gold donor status")
+elif donation >= 100:
+  print("You've achieved silver donor status")
+else:
+  print("You've achieved bronze donor status")
+```
