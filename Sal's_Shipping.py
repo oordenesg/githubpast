@@ -9,12 +9,15 @@
 # Write a shipping.py Python program that asks the user for the weight of their package and then tells them which method of shipping is cheapest 
 # and how much it will cost to ship their package using Sal’s Shippers.
 
-
+# First things first, define a weight variable and set it equal to any number.
 
 print("inputs")
 weight = 1.5
 cost_ground_premium = 125
 price = 0
+
+# Create an if/elif/else statement for the cost of ground shipping. It should check for weight, and print the cost of shipping a package of that weight.
+
 print("Gound Shipping:")
 if weight <= 2:
   price = weight*1.50+20
@@ -29,9 +32,13 @@ else:
   price = weight*4.75+20
   print(price)
 
+# We’ll also need to make sure we include the price of premium ground shipping in our code.
+
+Create a variable for the cost of premium ground shipping.
 print("Ground Shipping Premium:")
 print(price + cost_ground_premium)
 
+ # Create an if/elif/else statement for the cost of drone shipping. This statement should check against weight and print the cost of shipping a package of that weight.
 print("Drone Shipping:")
 if weight <= 2:
   price = weight*4.50
