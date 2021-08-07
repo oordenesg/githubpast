@@ -234,3 +234,25 @@ if credits >= 120 and gpa >= 2:
   print("You meet the requirements to graduate!")
 ```
 
+Let's check how to se the *or* statement.
+
+```python
+True or (3 + 4 == 7)    # True
+(1 - 1 == 0) or False   # True
+(2 < 0) or True         # True
+(3 == 8) or (3 > 4)     # False
+
+## Using the previous example
+credits = 118
+gpa = 2.
+if credits >= 120 or gpa >= 2.0:
+  print("You have met at least one of the requirements.")
+```
+
+The final boolean operator we will cover is not. This operator is straightforward: when applied to any boolean expression it reverses the boolean value. So if we have a True statement and apply a not operator we get a False statement.
+
+```python
+not 1 + 1 == 2  # False
+not 7 < 0       # True
+```
+
