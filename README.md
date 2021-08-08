@@ -338,4 +338,18 @@ my_list + 4 # It will print an error
 my_list + [4] # It will print [1,2,3,4]
 ```
 
+Let's imagine we are interviewing candidates for a job. We will call each candidate in order, represented by a Python list. 
+
+```python
+calls = ["Juan", "Zofia", "Amare", "Ezio", "Ananya"]
+```
+
+
+In Python, we call the location of an element in a list its index. Python lists are zero-indexed. This means that the first element in a list has index 0, rather than 1.In this example, the element with index 2 is "Amare". We can select a single element from a list by using square brackets ([]) and the index of the list item. If we wanted to select the third element from the list, we’d use calls[2]:
+
+```python
+print(calls[2]) ## The output will be Amare 
+```
+
+
 
