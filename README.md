@@ -289,3 +289,30 @@ elif donation >= 100:
 else:
   print("You've achieved bronze donor status")
 ```
+
+## List 
+
+When we work with data, it is important to collect and store datapoints. In Python, a list is one of the many built-in data structures that allows us to do this. Let's imagine that we want to make a list of the heights of students in a class. Noelle is 61 inches tall, Ava is 70 inches, Sam is 67 inches and  Mia is 64 inches. Using Python, we can create a variable called **heights** to store these values. 
+
+```python
+# Create a variable called heights to store values.
+heights = [61, 70, 67, 64] # A list begins and ends with square brackets [ ]
+```
+
+List can contain different data types. Using the last example, instead of storing each student's height, we can create a list that contains their names. We can even combine multiple data types in just one list as well. In general, *List* can contain any data type in Python. For example strings, intergers, booleans and float numbers. Let's check some examples.
+
+```python
+names = ["Noelle", "Ava", "Sam", "Mia"]
+mixed_list_string_number = ["Noelle", 61]
+mixed_list_common = ["Mia", 27, False, 0.5]
+empty_list = [] # We can also create an empty list
+```
+
+
+
+
+
+
+
+
+
