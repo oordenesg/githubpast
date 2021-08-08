@@ -308,11 +308,34 @@ mixed_list_common = ["Mia", 27, False, 0.5]
 empty_list = [] # We can also create an empty list
 ```
 
+There are internal built-in functions that we can use to create, manipulate, and even delete data from our list. We called them methods. For lists, methods will the form of *list_name*.method(). Some of them will require an input value that will go between the parenthesis of the method(). One of most popular methods is *.append()* and it allows us to add a new element to the end of a list. 
 
+```python
+append_example = [ 'This', 'is', 'an', 'example']
+append_example.append('list')
+print(append_example) # it will print ['This', 'is', 'an', 'example', 'list']
 
+## Let's check a new example
 
+example_list = [1, 2, 3, 4]
+example_list.append(5)  #Using Append
+print(example_list)
 
+example_list.remove(5) #Using Remove
+print(example_list)
+```
 
+We can add additional elements using the *+* operator to combine two list (this is aslo known as concatenation). 
 
+```python
+items_sold = ["cake", "cookie", "bread"]
+items_sold_new = items_sold + ["biscuit", "tart"]
+print(items_sold_new)
+
+# A second example
+my_list = [1, 2, 3]
+my_list + 4 # It will print an error
+my_list + [4] # It will print [1,2,3,4]
+```
 
 
