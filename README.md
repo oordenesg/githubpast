@@ -369,7 +369,37 @@ print(index5_element) # "cereal
 In list, we can update or modify a value by using the index. To do this, reassing the value using the specific index of the element. 
 
 ```python
+# First example
 garden = ["Tomatoes", "Green Beans", "Cauliflower", "Grapes"]
 garden[2] = "Strawberries"
 print(garden) # it will print ["Tomatoes", "Green Beans", "Strawberries", "Grapes"]
+
+# Second example
+garden_waitlist = ["Jiho","Adam","Sonny","Alisha"]
+garden_waitlist[1] = "Calla"
+print(garden_waitlist)
+garden_waitlist[-1] = "Alex"
+print(garden_waitlist)
 ```
+
+We can also remove elements from our list by using the built-in function *.remove()*. Let's see how to use the function.
+
+```python
+# First example
+shopping_line = ["Cole", "Kip", "Chris", "Sylvana"]
+shopping_line.remove("Chris")
+print(shopping_line) # ["Cole", "Kip", "Sylvana"]
+
+# Second example
+
+order_list = ["Celery","Orange Juice","Orange","Flatbread"]
+print(order_list)
+order_list.remove("Flatbread")
+print(order_list)
+new_store_order_list = ["Orange", "Apple", "Mango", "Broccoli", "Mango"]
+print(new_store_order_list)
+new_store_order_list.remove("Mango")
+print(new_store_order_list)
+new_store_order_list.remove("Onions") # It will print an error. We don't have onions.
+```
+
