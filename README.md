@@ -351,5 +351,25 @@ In Python, we call the location of an element in a list its index. Python lists 
 print(calls[2]) ## The output will be Amare 
 ```
 
+We can select the last element of a list by using negative index. We can use the index *-1* to select the last item of a list. Let's see the following example.
 
+```python
+pancake_recipe = ["eggs", "flour", "butter", "milk", "sugar", "love"]
+print(pancake_recipe[-1]) # The ouput will be 'love'
 
+#### A second example
+
+hopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+last_element = shopping_list[-1]
+index5_element = shopping_list[5]
+print(last_element) # "cereal"
+print(index5_element) # "cereal
+```
+
+In list, we can update or modify a value by using the index. To do this, reassing the value using the specific index of the element. 
+
+```python
+garden = ["Tomatoes", "Green Beans", "Cauliflower", "Grapes"]
+garden[2] = "Strawberries"
+print(garden) # it will print ["Tomatoes", "Green Beans", "Strawberries", "Grapes"]
+```
