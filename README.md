@@ -434,4 +434,24 @@ ellies_score = class_name_test[-1][-1]
 print(ellies_score)
 ```
 
+Using this example, let's imagine that our list stores the student’s favorite hobby and one of them "Jenny" changed her hobby. Let's do that.
+
+```python
+class_name_hobbies = [["Jenny", "Breakdancing"], ["Alexus", "Photography"], ["Grace", "Soccer"]] # Original list
+# "Jenny" changed their mind and is now more interested in "Meditation".
+class_name_hobbies[0][1] = "Meditation"
+print(class_name_hobbies) # [["Jenny", "Meditation"], ["Alexus", "Photography"], ["Grace", "Soccer"]]
+
+# Second example
+incoming_class = [["Kenny","American",9],["Tanya","Russian",9],["Madison","Indian",7]]
+print(incoming_class)
+incoming_class[2][2] = 8
+print(incoming_class)
+incoming_class[-3][-3] = "Ken"
+print(incoming_class)
+``` 
+
+
+
+
 
