@@ -403,3 +403,35 @@ print(new_store_order_list)
 new_store_order_list.remove("Onions") # It will print an error. We don't have onions.
 ```
 
+
+As we saw previously, list can be filled with number or strings. However, list can contain other lists as well. We will commonly refer to these as two-dimensional lists. Let's see an example. Noelle is 61 inches tall, Ava is 70 inches, Sam is 67 inches and Mia is 64 inches. Previously, we saw that we could create a list representing both Noelle’s name and height:
+
+```python
+noelle = ["Noelle", 61]
+# We can put several of these lists into one list, such that each entry in the list represents a student and their height:
+heights = [["Noelle", 61], ["Ava", 70], ["Sam", 67], ["Mia", 64]]
+
+# Second example
+heights = [["Jenny", 61], ["Alexus", 70], ["Sam", 67], ["Grace", 64],["Vik",68]]
+ages = [["Aaron",15],["Dhruti",16]]
+```
+
+Two-dimensional lists can be accessed using brackets as well. However, instead of providing a single pair of brackets [ ] we will use an additional set for each dimension past the first.
+
+```python
+# Using the previous example
+noelles_height = heights[0][1] 
+print(noelles_height) ## It will print 61
+
+# Second example
+class_name_test = [["Jenny",90],["Alexus",85.5],["Sam",83],["Ellie",101.5]]
+print(class_name_test)
+
+sams_score = class_name_test[2][1]
+print(sams_score)
+
+ellies_score = class_name_test[-1][-1]
+print(ellies_score)
+```
+
+
