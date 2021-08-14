@@ -526,16 +526,29 @@ range_diff_five = range(0,40,5)
 print(list(range_diff_five)) # It will print [0, 5, 10, 15, 20, 25, 30, 35]
 ```
 
-Often, we’ll need to find the number of items in a list, usually called its length.
+Sometimes, we need to find the number of times in a list. We can do this by using the .len() method.
 
-We can do this using a built-in function called len().
-
-When we apply len() to a list, we get the number of elements in that list:
-
+```python
+# First example
 my_list = [1, 2, 3, 4, 5]
- 
-print(len(my_list))
-Would output:
+print(len(my_list)) # It will print 5
 
-5
+# Second example
+
+long_list = [1, 5, 6, 7, -23, 69.5, True, "very", "long", "list", "that", "keeps", "going.", "Let's", "practice", "getting", "the", "length"]
+range_list = range(2, 3000, 10)
+
+long_list_len = len(long_list)
+print(long_list_len) # It will print 18
+
+range_list_length = len(range_list)
+print(range_list_length) # It will print 300
+
+range_list = range(2, 3000, 100)
+range_list_length = len(range_list)
+print(range_list_length) # It will print 30
+```
+
+
+
 
