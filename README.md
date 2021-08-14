@@ -509,5 +509,20 @@ print(list(my_range)) # It will print [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 zero_to_seven = range(8)
 print(list(zero_to_seven)) # [0, 1, 2, 3, 4, 5, 6, 7]
 ``` 
+If we use this same method but with two inputs, we cancreate a list that starts at a different number. For example, range(2,9) would generate numbers starting at 2 and ending at 8.
 
+```python
+my_list = range(2, 9)
+print(list(my_list)) # It will print [2, 3, 4, 5, 6, 7, 8]
+```
+If we use a third input our method, we can create a list that "skips" numbers. For example, range(2, 9, 2) will give us a list where each number is 2 greater than the previous number.
+
+```python
+my_range2 = range(2, 9, 2)
+print(list(my_range2)) # It will print [2, 4, 6, 8]
+
+# Second exaxmple
+range_diff_five = range(0,40,5)
+print(list(range_diff_five)) # It will print [0, 5, 10, 15, 20, 25, 30, 35]
+```
 
