@@ -451,6 +451,35 @@ incoming_class[-3][-3] = "Ken"
 print(incoming_class)
 ``` 
 
+Now are going to explore additional ways of working with lists. Using built-in functions we can:
+
+1. Add and remove items from a list using a specific index.
+2. Create lists with continuous values.
+3. Get the length of a list.
+4. Select portions of a list (called slicing).
+5. Count the number of times that an element appears in a list.
+6. Sort a list of items.
+
+
+The method .insert() allows us to add a new element to a specific index in a list. This method takes two inputs, the index and the element we want to insert. This method can also handle shifting over elements and ca be used with negative indices. Let's see an example
+
+```python
+store_line = ["Karla", "Maxium", "Martim", "Isabella"]
+store_line.insert(2, "Vikor")
+print(store_line)  # The output will be  ['Karla', 'Maxium', 'Vikor', 'Martim', 'Isabella']
+``` 
+Some important details about this method are:
+1. The order and number of the inputs is important. The .insert() method expects two inputs, the first being a numerical index, followed by any value as the second input.
+2. When we insert an element into a list, all elements from the specified index and up to the last index are shifted one index to the right. This does not apply to inserting an element to the very end of a list as it will simply add an additional index and no other elements will need to shift. 
+
+Let's see an second example
+
+```python
+front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"] 
+front_display_list.insert(0,"Pineapple")
+print(front_display_list) # ['Pineapple', 'Mango', 'Filet Mignon', 'Chocolate Milk']
+```
+
 
 
 
