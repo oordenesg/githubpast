@@ -568,6 +568,24 @@ print(middle) # ['pants', 'pants']
 ```
 
 
+Slicing syntax in Python is very flexible. Let’s look at a few more problems we can tackle with slicing. Let's see some examples
+
+```python
+# fruits = ["apple", "cherry", "pineapple", "orange", "mango"]
+# If we want to select the first n elements of a list, we could use the following code:
+
+fruits[:n]
+print(fruits[:3]) # Would output ['apple', 'cherry', 'pineapple']
+
+# We can do something similar when we want to slice the last n elements in a list:
+# fruits[-n:] For our fruits list, suppose we wanted to slice the last two elements.
+
+print(fruits[-2:]) # Would output ['orange', 'mango']
+
+# Negative indices can also accomplish taking all but n last elements of a list.
+# fruits[:-n]
+print(fruits[:-1]) # Would output ['apple', 'cherry', 'pineapple', 'orange']
+```
 
 
 
