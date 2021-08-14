@@ -549,6 +549,25 @@ range_list_length = len(range_list)
 print(range_list_length) # It will print 30
 ```
 
+If we want to extract only a portion of a lists. We can use the following sintax table[start:end]. 
+```python
+# First example
+letters = ["a", "b", "c", "d", "e", "f", "g"]
+sliced_list = letters[1:6]
+print(sliced_list) # It will print ["b", "c", "d", "e", "f"]
+
+# Second Example
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+beginning = suitcase[0:4]
+
+print(beginning) # It will print ['shirt', 'shirt', 'pants', 'pants']
+beginning = suitcase[0:2]
+print(beginning) # ['shirt', 'shirt']
+middle = suitcase[2:4]
+print(middle) # ['pants', 'pants']
+```
+
+
 
 
 
