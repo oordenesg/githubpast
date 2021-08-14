@@ -526,3 +526,16 @@ range_diff_five = range(0,40,5)
 print(list(range_diff_five)) # It will print [0, 5, 10, 15, 20, 25, 30, 35]
 ```
 
+Often, we’ll need to find the number of items in a list, usually called its length.
+
+We can do this using a built-in function called len().
+
+When we apply len() to a list, we get the number of elements in that list:
+
+my_list = [1, 2, 3, 4, 5]
+ 
+print(len(my_list))
+Would output:
+
+5
+
