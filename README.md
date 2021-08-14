@@ -497,3 +497,17 @@ data_science_topics.pop(3)
 print(data_science_topics) # ['Machine Learning', 'SQL', 'Pandas', 'Statistics']
 ```
 
+In Python, we can also create a list of consecutive numbers like [0,1,2,3,4,5,6]. Typing out all those numbers is overwhelming. However, Python gives us an easy way of creating these type of lists using a built-in function called *range()*. This function takes a single input and generates numbers starting at 0 and ending at the number before the input. Let's see an example:
+
+```python
+# First example
+my_range = range(10)
+print(my_range) # It will print range(0, 10)
+print(list(my_range)) # It will print [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Second example
+zero_to_seven = range(8)
+print(list(zero_to_seven)) # [0, 1, 2, 3, 4, 5, 6, 7]
+``` 
+
+
