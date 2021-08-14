@@ -480,7 +480,20 @@ front_display_list.insert(0,"Pineapple")
 print(front_display_list) # ['Pineapple', 'Mango', 'Filet Mignon', 'Chocolate Milk']
 ```
 
+Python gives us a method to remove elements from a list as well. This method is quite similar to .insert(). However, the .pop() method takes an optional single input: The index for the element you want to remove. Let's see how it works
 
+```python
+# First example
+cs_topics = ["Python", "Data Structures", "Balloon Making", "Algorithms", "Clowns 101"]
+removed_element = cs_topics.pop() # without index means "remove the last element"
+print(cs_topics)
+print(removed_element) # ["Python", "Data Structures", "Balloon Making", "Algorithms"]
 
-
+# Second example
+data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics", "Python 3"]
+data_science_topics.pop()
+print(data_science_topics) # ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics"]
+data_science_topics.pop(3)
+print(data_science_topics) # ['Machine Learning', 'SQL', 'Pandas', 'Statistics']
+```
 
