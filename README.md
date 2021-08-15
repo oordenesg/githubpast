@@ -598,5 +598,60 @@ slice_off_last_three = suitcase[:-3]
 print(slice_off_last_three)
 ```
 
+If we want to count occurrences of an item in a list. We can use the .count() method. Let's see how it works.
+
+```python
+letters = ["m", "i", "s", "s", "i", "s", "s", "i", "p", "p", "i"]
+num_i = letters.count("i")
+print(num_i) # Would output 4
+
+```
+We can also use this function to count elements in a two-dimensional list. 
+
+```python
+# First example
+number_collection = [[100, 200], [100, 200], [475, 29], [34, 34]]
+num_pairs = number_collection.count([100, 200])
+print(num_pairs) # Would output 2
+
+# Second examle
+votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie", "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+jake_votes = votes.count("Jake")
+print(jake_votes) # Would output 9
+```
+Often, we will want to sort a list in either numerical (1, 2, 3, …) or alphabetical (a, b, c, …) order. We can sort a list using the method .sort().
+
+```python
+# First example
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+names.sort()
+print(names) # ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+names.sort(reverse=True)
+print(names) # ['Xander', 'Willow', 'Giles', 'Buffy', 'Angel']
+``` 
+
+A second way of sorting a list in Python is to use the built-in function sorted(). The sorted() function is different from the .sort() method in two ways:
+
+1. It comes before a list, instead of after as all built-in functions do.
+2. It generates a new list rather than modifying the one that already exists.
+
+```python
+# First example
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+sorted_names = sorted(names)
+print(sorted_names) # Would output ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+# Note that using sorted did not change names:
+print(names) # Would output ['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
+
+# Second example
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+games_sorted = sorted(games)
+print(games) # Would output ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+print(games_sorted) # Would output ['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
+```
+
+
 
 
