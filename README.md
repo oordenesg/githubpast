@@ -567,10 +567,11 @@ middle = suitcase[2:4]
 print(middle) # ['pants', 'pants']
 ```
 
-
 Slicing syntax in Python is very flexible. Let’s look at a few more problems we can tackle with slicing. Let's see some examples
 
 ```python
+# First example
+
 # fruits = ["apple", "cherry", "pineapple", "orange", "mango"]
 # If we want to select the first n elements of a list, we could use the following code:
 
@@ -585,6 +586,16 @@ print(fruits[-2:]) # Would output ['orange', 'mango']
 # Negative indices can also accomplish taking all but n last elements of a list.
 # fruits[:-n]
 print(fruits[:-1]) # Would output ['apple', 'cherry', 'pineapple', 'orange']
+
+# Second example
+
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+last_two_elements = suitcase[-2:]
+print(last_two_elements)
+
+slice_off_last_three = suitcase[:-3]
+print(slice_off_last_three)
 ```
 
 
