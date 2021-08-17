@@ -652,6 +652,16 @@ print(games) # Would output ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sim
 print(games_sorted) # Would output ['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
 ```
 
+## Loops 
+
+In programming, the process of using an initialization, repetitions, and an ending condition is called a loop. In a loop, we perform a process of iteration (repeating tasks.
+Using Python there two types of iteration.
+
+- Indefinite iteration, where the number of times the loop is executed depends on how many times a condition is met.
+- Definite iteration, where the number of times the loop will be executed is defined in advance (usually based on the collection size).
+
+In this section, we’ll learn how to use Python to implement both definite and indefinite iteration in our own programs.
+
 
 
 
