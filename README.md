@@ -692,7 +692,23 @@ A for keyword indicates the start of a for loop. A <temporary variable> that is 
 ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
 for ingredient in ingredients:
   print(ingredient)
+ 
+# This code outputs: milk,sugar,vanilla extract,dough, chocolate
 ```
+ 
+Let's see more examples
+ 
+ ```python
+ board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+
+sport_games = ["football", "hockey", "baseball", "cricket"]
+
+for game in board_games:
+  print(game)
+
+for sport in sport_games:
+  print(sport)
+ ````
  
 
 
