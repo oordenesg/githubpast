@@ -662,6 +662,39 @@ Using Python there two types of iteration.
 
 In this section, we’ll learn how to use Python to implement both definite and indefinite iteration in our own programs.
 
+Let's imagine we have a list of ingredients and we want to print out all of them.
+
+```python
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+#If we only use print(), our program might look like this:
+
+print(ingredients[0])
+print(ingredients[1])
+print(ingredients[2])
+print(ingredients[3])
+print(ingredients[4])
+```
+
+This process is managable when we write 5 or 10 print() statements. However, let's imagine that our list has 100,000 elements. It would take an extremely long time and by the end, we could still end up with inconsistencies and mistakes. To do this, we can use loops. 
+
+Let’s start with your first type of loop, a for loop, a type of definite iteration. In our examples, we will be using Python lists as our collection of elements.
+With for loops, on each iteration, we will be able to perform an action on each element of the collection. Before we work with any collection, let’s examine the general structure of a for loop:
+
+```python
+for <temporary variable> in <collection>:
+  <action>
+Let’s break down each of these components:
+```
+
+A for keyword indicates the start of a for loop. A <temporary variable> that is used to represent the value of the element in the collection the loop is currently on. An in keyword separates the temporary variable from the collection used for iteration. A <collection> to loop over. In our examples, we will be using a list. An <action> to do anything on each iteration of the loop. Now, let's use our previous example to create a for loop.
+ 
+```python
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+for ingredient in ingredients:
+  print(ingredient)
+```
+ 
+
 
 
 
