@@ -729,5 +729,22 @@ for temp in range(6):
   print("Loop is on iteration number " + str(temp + 1))
 ```
 
+For loops are not the only type of loops we can use. Ano
+ 
+ 
+ In Python, for loops are not the only type of loops we can use. Another type of loop is called a while loop and is a form of indefinite iteration.
 
+A while loop performs a set of instructions as long as a given condition is true.
+
+The structure follows this pattern:
+
+while <conditional statement>:
+  <action>
+Let’s examine this example, where we print the integers 0 through 3:
+
+count = 0
+while count <= 3:
+  # Loop Body
+  print(count)
+  count += 1
 
