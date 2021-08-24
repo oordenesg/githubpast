@@ -708,7 +708,26 @@ for sport in sport_games:
   print(sport)
  ````
  
+ Sometimes we won't be iterating through a specific list, but rather only want to perform a certain action multiple times. To create a for loop we can use the built-in function range(). Let's see an example
+ 
+```python
+six_steps = range(6) 
+# six_steps is now a collection with 6 elements:
+# 0, 1, 2, 3, 4, 5
+```
+ We can use the six_steps variable directly in our for loop to perfrom a six-step interation:
+ 
+```python
+for temp in range(6):
+  print("Learning Loops!")
+```
 
+If we want to add additional information, we can use the same variable to track it.
+ 
+```python
+for temp in range(6):
+  print("Loop is on iteration number " + str(temp + 1))
+```
 
 
 
