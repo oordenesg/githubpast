@@ -745,6 +745,25 @@ while count <= 3:
   # Loop Body
   print(count)
   count += 1
-   ```
-             
+```
+                
+Lets analyze this loop: 
+                
+1. The first variable count is equal to 0. The conditional statement in the while loop is count <= 3, which is true at the initial iteration of the loop. With this the loop body executes. Inside the loop, it is possible to see that we want to increment to count by 1
 
+2. When loop finish the firts iteration, Python returns to the top of the loop and check the condition again. After the first iteration count should be equal to 1. With this, the condition still evaluates to true and to the loop continues.
+
+3. This process continues until the count variable becomes 4. At that point, the condition is false and the loop will stop. 
+   
+Let’s write a while loop that counts down from 10 to 0(inclusive).
+ 
+```python
+countdown = 10;
+
+while countdown >=0:
+  print(countdown)
+  countdown += -1
+
+print("We have liftoff!")
+```
+   
