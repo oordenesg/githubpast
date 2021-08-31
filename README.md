@@ -767,3 +767,23 @@ while countdown >=0:
 print("We have liftoff!")
 ```
    
+A while loop is not only for counting.  We can use this tool to iterate through a list as well.
+Let's check an example.
+
+´´´python
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+
+length = len(ingredients)
+index = 0
+ 
+while index < length:
+  print(ingredients[index])
+  index += 1
+
+# our final output wouldbe 
+# milk
+# sugar
+# vanilla extract
+# dough
+# chocolate
+´´´
