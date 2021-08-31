@@ -768,7 +768,7 @@ print("We have liftoff!")
 ```
    
 A while loop is not only for counting.  We can use this tool to iterate through a list as well.
-Let's check an example.
+Lets check an example.
 
 ´´´python
 ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
