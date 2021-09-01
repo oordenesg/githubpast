@@ -815,5 +815,18 @@ for item in items_on_sale:
     print("Found it")
 ```
 
-
-This code goes through each item in items_on_sale and checks for a match. Once "knit_dress" is found in the list items_on_sale, we don’t need to go through the rest of the items_on_sale list. Unfortunately, our loop will keep running until we reach the end of the list.
+This code goes through each item in items_on_sale and checks for a match. Once "knit_dress" is found in the list items_on_sale, we don’t need to go through the rest of the items_on_sale list. Unfortunately, our loop will keep running until we reach the end of the list. Using loops, thankfully we can stop iteration from inside the loop 
+by using break loop control statement.
+   
+```   
+items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+ 
+print("Checking the sale list!")
+ 
+for item in items_on_sale:
+  print(item)
+  if item == "knit dress":
+    break
+ 
+print("End of search!")
+```
