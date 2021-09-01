@@ -800,4 +800,20 @@ while index < length:
   print('I am learning about ' + python_topics[index])
   index += 1
 ```
-         
+       
+In Python, Loops are very versatile. This programming languague provides a set of control
+statements that we can use to get more control.
+
+Let's check an example that we may encounter to see a use case for loop control statements.
+If we want to search a list to check if a specific value exists, we can use a if statement to check this.
+
+```
+items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+
+for item in items_on_sale:
+  if item == "knit dress":
+    print("Found it")
+```
+
+
+This code goes through each item in items_on_sale and checks for a match. Once "knit_dress" is found in the list items_on_sale, we don’t need to go through the rest of the items_on_sale list. Unfortunately, our loop will keep running until we reach the end of the list.
