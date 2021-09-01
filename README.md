@@ -818,7 +818,7 @@ for item in items_on_sale:
 This code goes through each item in items_on_sale and checks for a match. Once "knit_dress" is found in the list items_on_sale, we don’t need to go through the rest of the items_on_sale list. Unfortunately, our loop will keep running until we reach the end of the list. Using loops, thankfully we can stop iteration from inside the loop 
 by using break loop control statement.
    
-```   
+```python   
 items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
  
 print("Checking the sale list!")
@@ -830,3 +830,16 @@ for item in items_on_sale:
  
 print("End of search!")
 ```
+Let's check a new example.
+  
+```python  
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+for dog_breed in dog_breeds_available_for_adoption:
+  print(dog_breed)
+  if dog_breed == dog_breed_I_want:
+    print("They have the dog I want!")
+    break
+```
+
