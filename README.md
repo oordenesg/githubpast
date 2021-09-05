@@ -872,3 +872,15 @@ for age in ages:
     continue
   print(age)  
  ```
+If we have lists inside a list, we can use a nested loops. Suppose we are in charge of a science class, that is split into three project teams. Using a for or while loop can be useful here to get each team:
+
+ ```python     
+project_teams = [["Ava", "Samantha", "James"], ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+for team in project_teams:
+  print(team)
+
+# This function will output
+# ["Ava", "Samantha", "James"]
+# ["Lucille", "Zed"]
+# ["Edgar", "Gabriel"]
+ ```
