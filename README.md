@@ -861,3 +861,14 @@ for i in big_number_list:
 # 5
 # 2           
 ```
+           
+In this example, our control statement is paired with a conditional condition (if/elif/else). This is quite common when using this control statement. Additionally, when our loop first encountered an element (-1) that met the conditions of the if statement, it checked the code inside the block and saw the continue. When the loop then encounters a continue statement it immediately skips the current iteration and moves onto the next element in the list (4).The output of the list only printed positive integers in the list because every time our loop entered the if statement and saw the continue statement it simply moved to the next iteration of the list and thus never reached the print statement.
+
+ ```python        
+ ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for age in ages:
+  if age < 21:
+    continue
+  print(age)  
+ ```
