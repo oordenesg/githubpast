@@ -843,3 +843,21 @@ for dog_breed in dog_breeds_available_for_adoption:
     break
 ```
 
+In some cases, we don't want to end the loop entirely. What if we only want to skip the current iteration of the loop.
+Let's see an list of integers as an example.
+
+
+```python
+big_number_list = [1, 2, -1, 4, -5, 5, 2, -9]
+for i in big_number_list:
+  if i <= 0:
+    continue
+  print(i)
+           
+# this function would output
+# 1
+# 2
+# 4
+# 5
+# 2           
+```
