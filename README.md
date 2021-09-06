@@ -919,3 +919,16 @@ numbers = [2, -1, 79, 33, -45]
 doubled = [num * 2 for num in numbers]
 print(doubled)   
 ```
+
+This technique is what we called List Comprehensions. They are very flexible. In fact, we can incorporate a conditional logic if we want.  Suppose we wanted to double only our negative numbers from our previous numbers list.   
+
+```python      
+numbers = [2, -1, 79, 33, -45]
+only_negative_doubled = []
+ 
+for num in numbers:
+  if num < 0: 
+    only_negative_doubled.append(num * 2)
+ 
+print(only_negative_doubled)  # would output [-2, -90]
+```             
