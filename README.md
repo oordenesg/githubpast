@@ -899,3 +899,16 @@ for location in sales_data:
 
 print(scoops_sold)
  ```
+
+There is another way we can write loops in our programs. In some cases, we can use append to add elements into a new list. To start, let’s say we had a list of integers and wanted to create a list where each element is doubled. 
+ 
+```python      
+numbers = [2, -1, 79, 33, -45]
+doubled = []
+ 
+for number in numbers:
+  doubled.append(number * 2)
+ 
+print(doubled)   
+# This function will output [4, -2, 158, 66, -90]   
+ ```
