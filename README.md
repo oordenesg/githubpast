@@ -912,3 +912,10 @@ for number in numbers:
 print(doubled)   
 # This function will output [4, -2, 158, 66, -90]   
  ```
+We can write this function in just one line. Let's see how to do this.
+
+```python     
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 for num in numbers]
+print(doubled)   
+```
