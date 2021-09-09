@@ -686,7 +686,7 @@ for <temporary variable> in <collection>:
 Let’s break down each of these components:
 ```
 
-A for keyword indicates the start of a for loop. A <temporary variable> that is used to represent the value of the element in the collection the loop is currently on. An in keyword separates the temporary variable from the collection used for iteration. A <collection> to loop over. In our examples, we will be using a list. An <action> to do anything on each iteration of the loop. Now, let's use our previous example to create a for loop.
+A for keyword indicates the start of a for loop. A <temporary variable> that is used to represent the value of the element in the collection the loop is currently on. An in keyword separates the temporary variable from the collection used for iteration. A collection to loop over. In our examples, we will be using a list. An <action> to do anything on each iteration of the loop. Now, let's use our previous example to create a for loop.
  
 ```python
 ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
