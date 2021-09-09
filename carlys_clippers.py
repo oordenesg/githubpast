@@ -19,7 +19,16 @@ last_week = [2, 3, 5, 8, 4, 4, 6, 2]
 
 total_price = 0
 
+# 2. Loop through the prices list and add each price to the variable total_price.
 for price in prices:
   total_price += price
 
 print(total_price)
+
+# 3. After your loop, create a variable called average_price that is the total_price divided by the number of prices. You can get the number of prices by using the len() function.
+
+average_price = total_price/len(prices)
+
+# 4. Print the value of average_price so the output looks like:
+
+print('Average Haircut Price: ' + str(average_price))
