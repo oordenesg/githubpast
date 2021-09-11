@@ -942,6 +942,14 @@ We can describe functions as a convenient way to group our code into reusable bl
 To create a function, we need to add some revelent parts. The first one is what we called a function definition. A function definition has three elements. The def keyword that indicates the beginning of a function. Then, the name of the funcion which is pair of parenthesis () that can hold input values known as parameters. Finally, the last element is a colo : to mark the end of the funcion header. Letse see and example: 
              
 ```python
+# Function 1:
 def function_name():
-  # functions tasks go here                    
+  # functions tasks go here    
+  
+# Example 2:
+def directions_to_timesSq():
+  print("Walk 4 mins to 34th St Herald Square train station")
+  print("Take the Northbound N, Q, R, or W train 1 stop")
+  print("Get off the Times Square 42nd Street stop")
+
 ```
