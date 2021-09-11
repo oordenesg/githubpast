@@ -953,3 +953,28 @@ def directions_to_timesSq():
   print("Get off the Times Square 42nd Street stop")
 
 ```
+             
+Having defined the name and the input of our function, we can call it by using its name followed by a pair of parentheses and no indentation.        
+
+```python
+# To call our function
+directions_to_timesSq()
+```
+
+In Python, the amount of whitespace tells the computer what is part of a function and what is not part of that function. If we wanted to write another statement outside our function, we would have to unindent the new line. Lets see an example
+             
+```python  
+def trip_welcome():
+  # Indented code is part of the function body
+  print("Welcome to Tripcademy!") 
+  print("Let's get you to your destination.")
+ 
+# Unindented code below is not part of the function body
+print("Woah, look at the weather outside! Don't walk, take the train!")
+ 
+trip_welcome()
+# The output will be              
+# Woah, look at the weather outside! Don't walk, take the train!
+# Welcome to Tripcademy!
+# Let's get you to your destination.
+```
