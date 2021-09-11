@@ -935,19 +935,13 @@ print(only_negative_doubled)  # would output [-2, -90]
 
 ## Introduction to Functions
 
+In some cases, loops are not the most effective way to iterate over a list of elements. Lets imagine we have two different list and we want to iterate or make some changes in both of them. In this, and if they have different elements, we need to create two for loops to carry out all the necessary changes. We can solve this by using functions. 
              
-Why Functions?
-Let’s come back to the trip planning application we just discussed in the previous exercise. The steps we talked about for our program were:
-
- 1. Establish an origin and destination
- 2. Calculate the distance/route
- 3. Return the best route 
-If we were to convert our steps into Python code, a very simple version that plans a trip between two popular New York tourist destinations might look like this:
-
-Anytime we want to go between these two points we would need to run these three print statements (for now we can assume the best route and time will stay the same).
-
-If our program now had 100 new people trying to find the best directions between the Empire State Building and Times Square, we would need to run each of our three print statements 100 times!
-
-Now, if you’re thinking about using a loop here, your intuition would be totally right! Unfortunately, we won’t be always traveling between the same two locations which means a loop won’t be as effective when we want to customize a trip. We will address this in the upcoming sections!
-
-For now, let’s gain an appreciation for functions.             
+We can describe functions as a convenient way to group our code into reusable blocks. A function can contain a sequence of steps that can be performed repeatedly throughout a program without having to repeat the process of writing the same code again. In this section, we are going to explore the idea of a function by slowly building out a Python program. 
+             
+To create a function, we need to add some revelent parts. The first one is what we called a function definition. A function definition has three elements. The def keyword that indicates the beginning of a function. Then, the name of the funcion which is pair of parenthesis () that can hold input values known as parameters. Finally, the last element is a colo : to mark the end of the funcion header. Letse see and example: 
+             
+```python
+def function_name():
+  # functions tasks go here                    
+```
