@@ -934,3 +934,12 @@ print(only_negative_doubled)  # would output [-2, -90]
 ```             
 
 ## Introduction to Functions
+
+             
+Why Functions?
+Let’s come back to the trip planning application we just discussed in the previous exercise. The steps we talked about for our program were:
+
+ 1. Establish an origin and destination
+ 2. Calculate the distance/route
+ 3. Return the best route 
+If we were to convert our steps into Python code, a very simple version that plans a trip between two popular New York tourist destinations might look like this:
