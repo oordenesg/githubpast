@@ -994,6 +994,19 @@ def trip_welcome(destination):
 trip_welcome("Times Square")
 # The output would be         
 # Welcome to Tripcademy!
-# Looks like you're going to Times Square today.              
+# Looks like youre going to Times Square today.              
 ```
 
+Using functions we can pass in more than one input to our functions. Lets write a function that takes in more than on parameters by using commas.
+   
+```python
+# Structure             
+ def my_function(parameter1, parameter2, parameter3):
+  # Some code
+             
+# Example
+def trip_welcome(origin, destination):
+  print("Welcome to Tripcademy")
+  print("Looks like you are traveling from " + origin)
+  print("And you are heading to " + destination)             
+``` 
