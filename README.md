@@ -978,3 +978,22 @@ trip_welcome()
 # Welcome to Tripcademy!
 # Let's get you to your destination.
 ```
+             
+Using our previous trip_welcome () function, we can add new features to it. In general, our function does a really good job of welcoming anyone who is travelling to one specific city however it is a bit static if we want to visit a new city. In order for us to make our function a bit more dynamic, we are going to use the concept of function parameters. The parameter allows our function to accept data as an input value.
+             
+```python   
+# Structure         
+def my_function(single_parameter)
+  # some code
+In the context of our trip_welcome() function, it would like this:
+# Example
+def trip_welcome(destination):
+  print("Welcome to Tripcademy!") 
+  print("Looks like you're going to " + destination + " today.")
+
+trip_welcome("Times Square")
+# The output would be         
+# Welcome to Tripcademy!
+# Looks like you're going to Times Square today.              
+```
+
