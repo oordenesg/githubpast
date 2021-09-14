@@ -1011,4 +1011,19 @@ def trip_welcome(origin, destination):
   print("And you are heading to " + destination)             
 ```
 
+In our functions, we can use 3 different types of arguments:
+
+1. Positional arguments: arguments that can be called by their position in the function definition.
+2. Keyword arguments: arguments that can be called by their name.
+3. Default arguments: arguments that are given default values.
+
+Let’s look at a function called calculate_taxi_price() that allows our users to see how much a taxi would cost to their destination.
+
+```python
+def calculate_taxi_price(miles_to_travel, rate, discount):
+  print(miles_to_travel * rate - discount )
+```
+In this example, we are using miles_to_travel is positioned as the first paremeter, rate is positioned as the second parameter, and discount is the third. If we want to call our function, we need to provide the same inputs in the same position. Let's see an example:
+
+
 
