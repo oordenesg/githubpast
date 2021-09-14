@@ -1025,5 +1025,14 @@ def calculate_taxi_price(miles_to_travel, rate, discount):
 ```
 In this example, we are using miles_to_travel is positioned as the first paremeter, rate is positioned as the second parameter, and discount is the third. If we want to call our function, we need to provide the same inputs in the same position. Let's see an example:
 
+```python
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+  print("First, we will stop in " + first_destination + ", then " + second_destination + ", and lastly " + final_destination)
 
+trip_planner("France", "Germany", "Denmark")
+trip_planner("Denmark", "France", "Germany")
+trip_planner(first_destination="Iceland", final_destination="Germany", second_destination="India")
+trip_planner("Brooklyn", "Queens")
+```
 
