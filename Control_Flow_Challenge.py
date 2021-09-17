@@ -272,3 +272,61 @@ def middle_element(lst):
     return lst[int(len(lst)/2)]
 
 print(middle_element([5, 2, -10, -4, 4, 5])) # should print -7.0
+
+# 21. Create a function named divisible_by_ten() that takes a list of numbers named nums as a parameter.
+# Return the count of how many numbers in the list are divisible by 10.
+
+def divisible_by_ten(nums):
+  count = 0
+  for i in nums:
+    if i%10 == 0:
+      count += 1
+  return count
+
+print(divisible_by_ten([20, 25, 30, 35, 40])) # should print 3
+
+# 22. Create a function named add_greetings() which takes a list of strings named names as a parameter.
+# In the function, create an empty list that will contain each greeting. Add the string 'Hello, ' in front of each name in names and append the greeting to the list.
+# Return the new list containing the greetings.
+
+def add_greetings(names):
+  greeting_list = []
+  for i in names:
+    greeting_list.append('Hello, ' + i)
+  return greeting_list
+
+print(add_greetings(["Owen", "Max", "Sophie"])) # ['Hello, Owen', 'Hello, Max', 'Hello, Sophie']
+
+# 23. Write a function called delete_starting_evens() that has a parameter named lst.
+# The function should remove elements from the front of lst until the front of the list is not even. The function should then return lst.
+# For example if lst started as [4, 8, 10, 11, 12, 15], then delete_starting_evens(lst) should return [11, 12, 15].
+# Make sure your function works even if every element in the list is even!
+
+def delete_starting_evens(lst):
+  while (len(lst) > 0 and lst[0] % 2 == 0)
+    lst = lst[1:]
+  return lst
+
+print(delete_starting_evens([4, 8, 10, 11, 12, 15])) # should print [11,12,15]
+print(delete_starting_evens([4, 8, 10])) # should print []
+
+# 24. Create a function named odd_indices() that has one parameter named lst.
+# The function should create a new empty list and add every element from lst that has an odd index. The function should then return this new list.
+# For example, odd_indices([4, 3, 7, 10, 11, -2]) should return the list [3, 10, -2].
+
+def odd_indices(lst):
+  new_list = []
+  for i in range(0,len(lst)):
+    if i%2 != 0:
+      new_list.append(lst[i])
+  return new_list
+
+print(odd_indices([4, 3, 7, 10, 11, -2])) # should print [3, 10, -2]
+
+# second option
+
+def odd_indices(lst):
+  new_lst = []
+  for index in range(1, len(lst), 2):
+    new_lst.append(lst[index])
+  return new_lst
