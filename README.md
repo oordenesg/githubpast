@@ -1048,3 +1048,34 @@ length_of_destination = len(destination_name)
 print(length_of_destination) # the output would be 28
 ```
 
+Let's see a second example.
+
+```python
+
+tshirt_price = 9.75
+shorts_price = 15.50
+mug_price = 5.99
+poster_price = 2.00
+
+# max price
+max_price = max(tshirt_price,shorts_price,mug_price,poster_price)
+print(max_price)
+# min price
+min_price = min(tshirt_price,shorts_price,mug_price,poster_price)
+print(min_price)
+# round value
+rounded_price = round(tshirt_price,1)
+print(rounded_price)
+```
+
+At this point, we have been using the built-in function *print* to visualize the output of our function. In general, functions can also return a value to the program so that this value can be modified or used later. We use the Python keyword *return* to do this. Let's seen an example
+
+```python
+def calculate_exchange_usd(us_dollars, exchange_rate):
+  return us_dollars * exchange_rate
+ 
+new_zealand_exchange = calculate_exchange_usd(100, 1.4)
+ 
+print("100 dollars in US currency would give you " + str(new_zealand_exchange) + " New Zealand dollars")
+```
+
