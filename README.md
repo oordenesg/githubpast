@@ -1079,3 +1079,18 @@ new_zealand_exchange = calculate_exchange_usd(100, 1.4)
 print("100 dollars in US currency would give you " + str(new_zealand_exchange) + " New Zealand dollars")
 ```
 
+In some cases we want to return more than one value from a function. We can return several values by separating them with a comma. Let's take some examples.
+
+```python
+def top_tourist_locations_italy():
+  first = "Rome"
+  second = "Venice"
+  third = "Florence"
+  return first,second,third
+
+most_popular1,most_popular2,most_popular3  = top_tourist_locations_italy()
+
+print(most_popular1) # would print out Rome
+print(most_popular2) # would print out Venice
+print(most_popular3) # would print out Florence
+```
