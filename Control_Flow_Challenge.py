@@ -330,3 +330,94 @@ def odd_indices(lst):
   for index in range(1, len(lst), 2):
     new_lst.append(lst[index])
   return new_lst
+
+# 25. Create a function named exponents() that takes two lists as parameters named bases and powers. Return a new list containing every number in bases raised to every number in powers.
+# For example, consider the following code.
+# exponents([2, 3, 4], [1, 2, 3])
+# the result would be the list [2, 4, 8, 3, 9, 27, 4, 16, 64]. It would first add two to the first. Then two to the second. Then two to the third, and so on.
+
+ef exponents(bases,powers):
+  new_list = []
+  for i in range(0,len(bases)):
+    for j in range(0,len(powers)):
+      new_list.append(bases[i]**powers[j])
+  return new_list
+
+print(exponents([2, 3, 4], [1, 2, 3])) # should print [2, 4, 8, 3, 9, 27, 4, 16, 64]
+
+# 26. Create a function named larger_sum() that takes two lists of numbers as parameters named lst1 and lst2.
+# The function should return the list whose elements sum to the greater number. If the sum of the elements of each list are equal, return lst1.
+
+def larger_sum(lst1,lst2):
+  if sum(lst1) == sum(lst2):
+    return lst1
+  else:
+    if sum(lst1) > sum(lst2):
+      return lst1
+    else:
+      return lst2
+
+print(larger_sum([1, 9, 5], [2, 3, 7])) # should print [1, 9, 5]
+
+# 27. Create a function named over_nine_thousand() that takes a list of numbers named lst as a parameter.
+# The function should sum the elements of the list until the sum is greater than 9000. When this happens, the function should return the sum. If the sum of all of the elements is never greater than 9000, the function should return total sum of all the elements. If the list is empty, the function should return 0.
+# For example, if lst was [8000, 900, 120, 5000], then the function should return 9020.
+
+def over_nine_thousand(lst):
+  sum_over = 0
+  if lst == []:
+    return 0
+  else:
+    for i in lst:
+      sum_over += i
+      if sum_over >= 9000:
+        break
+    return sum_over
+
+print(over_nine_thousand([8000, 900, 120, 5000])) # should print 9020
+
+# 28. Create a function named max_num() that takes a list of numbers named nums as a parameter.
+# The function should return the largest number in nums
+
+ef max_num(nums):
+  return max(nums)
+
+print(max_num([50, -10, 0, 75, 20])) # should print 75
+
+# second option
+
+def max_num(nums):
+  maximum = nums[0]
+  for number in nums:
+    if number > maximum:
+      maximum = number
+  return maximum
+
+
+# 29. Write a function named same_values() that takes two lists of numbers of equal size as parameters.
+# The function should return a list of the indices where the values were equal in lst1 and lst2.
+# For example, the following code should return [0, 2, 3]
+
+def same_values(lst1,lst2):
+  index_list = []
+  for i in range(0,len(lst1)):
+    if lst1[i] == lst2[i]:
+      index_list.append(i)
+  return index_list
+
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5])) # should print [0, 2, 3]
+
+# 30. Create a function named reversed_list() that takes two lists of the same size as parameters named lst1 and lst2.
+# The function should return True if lst1 is the same as lst2 reversed. The function should return False otherwise.
+# For example, reversed_list([1, 2, 3], [3, 2, 1]) should return True.
+
+def reversed_list(lst1,lst2):
+  if lst1 == lst2[::-1]:
+    return True
+  else:
+    return False
+
+print(reversed_list([1, 2, 3], [3, 2, 1])) # should print True
+print(reversed_list([1, 5, 3], [3, 2, 1])) # should print False
+
+
