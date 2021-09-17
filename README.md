@@ -1036,4 +1036,15 @@ trip_planner(first_destination="Iceland", final_destination="Germany", second_de
 trip_planner("Brooklyn", "Queens")
 ```
 
+In Python, there are two different categories of functions. So far, we have been using *Defined Functions* that are written by users. There is another category called *Built-in functions* that come built into Python for us to use. There are large number of built-in functions that we can use in our programs. Let's check some of them. 
+
+```python
+destination_name = "Venkatanarasimharajuvaripeta"
+ 
+# Built-in function: len()
+length_of_destination = len(destination_name)
+ 
+# Built-in function: print()
+print(length_of_destination) # the output would be 28
+```
 
