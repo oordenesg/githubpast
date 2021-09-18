@@ -1137,3 +1137,13 @@ fruit_suffix = "berries"
 favorite_fruit = fruit_prefix + fruit_suffix
 print(favorite_fruit)
 ```
+
+One built-in function that we can use with strings is the *len()* function. This function returns the number of characters in a string. 
+
+```python
+favorite_fruit = "blueberry"
+length = len(favorite_fruit)
+print(length) # should print 9 
+```
+
+
