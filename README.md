@@ -1110,4 +1110,30 @@ favorite_fruit = "blueberry"
 print(favorite_fruit[1]) # should print l
 ```
 
-is that the first letter you expected? Notice that the letter at index 1 of "blueberry" isn’t b, it’s l. This is because the indices of a string start at 0. b is located at the zero index.
+is that the first letter you expected? Notice that the letter at index 1 of "blueberry" isn’t b, it’s l. This is because the indices of a string start at 0. b is located at the zero index. Let's see a second example
+
+```python
+my_name = 'Lisa'
+first_initial = my_name[0]
+```
+We can also select entire chunks of characters from a string. We can do this with the following syntax.
+
+```python
+string[first_index:last_index]
+
+# Example
+
+first_name = "Rodrigo"
+last_name = "Villanueva"
+new_account = last_name[:5]
+temp_password = last_name[2:6]
+```
+
+We can also concatenate, or combine, two existing strings together into a new string. Consider the following two strings, we can create a new string by concatenating them together as follows.
+
+```python
+fruit_prefix = "blue"
+fruit_suffix = "berries"
+favorite_fruit = fruit_prefix + fruit_suffix
+print(favorite_fruit)
+```
