@@ -1095,3 +1095,19 @@ print(most_popular2) # would print out Venice
 print(most_popular3) # would print out Florence
 ```
 
+### Introduction to Strings
+
+In Python, a string is a whole paragraph, sentence or word that we can store as a variable. If we think about the format, a string is a sequence of characters contained within a pair of 'single quotes' or 'double quotes'. In general, a string can be any length and can contain any letters, numbers, symbols, and spaces.
+
+```python
+favorite_word = 'Stay Positive'
+print(favorite_word) # should print 'Stay Positive'
+```
+We can select a specific character within our string by using the same idea of list (index) Like any other list, each character in a string has an index. Consider the string:
+
+```python
+favorite_fruit = "blueberry"
+print(favorite_fruit[1]) # should print l
+```
+
+is that the first letter you expected? Notice that the letter at index 1 of "blueberry" isn’t b, it’s l. This is because the indices of a string start at 0. b is located at the zero index.
