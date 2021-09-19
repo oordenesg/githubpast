@@ -1194,3 +1194,29 @@ print_each_letter(favorite_color)
 # 'e'
 ```
 
+Using functions, we can explore different approaches. We can iterate through a string we do something with each character. By including conditional statements inside of these iterations, we can start to do some really cool stuff.
+
+```python
+# Example 1
+favorite_fruit = "blueberry"
+counter = 0
+for character in favorite_fruit:
+  if character == "b":
+    counter = counter + 1
+print(counter)
+
+# Example 2
+def contains(big_string,little_string):
+  if little_string in big_string:
+    return True
+  else:
+    return False
+
+# Example 3
+def common_letters(string_one,string_two):
+  list_words = []
+  for i in string_one:
+    if (i in string_two) & (i not in list_words):
+      list_words.append(i)
+  return list_words
+```
