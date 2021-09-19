@@ -1220,3 +1220,27 @@ def common_letters(string_one,string_two):
       list_words.append(i)
   return list_words
 ```
+
+In Python, there are three built-in functions that we can change the casing of a string. These are .lower(), .upper(), and .title(). Let's check their definitions.
+
+1. lower() returns the string with all lowercase characters.
+2. upper() returns the string with all uppercase characters.
+3. title() returns the string in title case, which means the first letter of each word is capitalized.
+
+```python
+# Example 1
+favorite_song = 'SmOoTH'
+favorite_song_lowercase = favorite_song.lower()
+print(favorite_song_lowercase) # should print 'smooth'
+
+# Example 2
+
+poem_title = "spring storm"
+poem_author = "William Carlos Williams"
+
+poem_title_fixed = poem_title.title()
+print(poem_title)
+
+poem_author_fixed = poem_author.upper()
+print(poem_author_fixed)
+```
