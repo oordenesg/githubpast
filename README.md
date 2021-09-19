@@ -1158,3 +1158,15 @@ print(second_to_last)
 final_word = company_motto[-4:]
 print(final_word)
 ```
+
+In Python, strings are immutable. However, there are different ways to change strings. 
+
+```python
+first_name = "Bob"
+last_name = "Daily"
+
+#first_name[0] = "R" # should print an error
+
+fixed_first_name = "R" + first_name[1:]
+print(fixed_first_name)
+```
