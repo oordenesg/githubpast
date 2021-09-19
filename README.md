@@ -1170,3 +1170,27 @@ last_name = "Daily"
 fixed_first_name = "R" + first_name[1:]
 print(fixed_first_name)
 ```
+
+Sometimes, using strings, we will accidentally add a new string before we wanted to by including the " character. We solve this by introducing escape characters. By adding a backslash in front of the special character we want to escape, \", we can include it in a string.
+
+```python
+ favorite_fruit_conversation = "He said, "blueberries are my favorite!""
+ # We can solve by using 
+ favorite_fruit_conversation = "He said, \"blueberries are my favorite!\""
+```
+
+Since we've described strings as lists of elements, we can iterate through a string by using for or while loops. This gives us a lot possibilities of ways we can manipulate and analyze strings. Let's take a look at an example. 
+
+```python
+def print_each_letter(word):
+  for letter in word:
+    print(letter)
+    
+favorite_color = "blue"
+print_each_letter(favorite_color)
+# 'b'
+# 'l'
+# 'u'
+# 'e'
+```
+
