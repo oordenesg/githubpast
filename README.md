@@ -1244,3 +1244,23 @@ print(poem_title)
 poem_author_fixed = poem_author.upper()
 print(poem_author_fixed)
 ```
+
+Another function is *split*. This function takes one argument and return a list of substrings. In some cases, we can provide an argument however it is not always necessary. 
+If we provide an argument within the function, we can dictate the character we want our string to be split on. Let's see some examples.
+
+
+```python
+# Example 1
+greatest_guitarist = "santana"
+print(greatest_guitarist.split('n')) # should print ['sa', 'ta', 'a']
+
+# Example 2
+line_one = "The sky has given over"
+line_one_words = line_one.split()
+print(line_one_words)
+```
+
+
+
+
+
