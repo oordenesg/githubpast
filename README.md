@@ -1309,8 +1309,22 @@ spring_storm_lines = spring_storm_text.split('\n')
 print(spring_storm_lines)
 ```
 
+With the previous function, we've learned how to break a string. Now, let's learn to put a string together back using the function *join*. This function is essentially the opposite of *split*. Let's see an example
 
+```python
+my_munequita = ['My', 'Spanish', 'Harlem', 'Mona', 'Lisa']
+print(' '.join(my_munequita))
+# => 'My Spanish Harlem Mona Lisa'
+```
 
+We can also join a list of strings by using a comma. To do this, we have provide the comma just before the *join* function. Let's how to perform this. 
+
+```python
+santana_songs = ['Oye Como Va', 'Smooth', 'Black Magic Woman', 'Samba Pa Ti', 'Maria Maria']
+santana_songs_csv = ','.join(santana_songs)
+print(santana_songs_csv)
+# => 'Oye Como Va,Smooth,Black Magic Woman,Samba Pa Ti,Maria Maria'
+```
 
 
 
