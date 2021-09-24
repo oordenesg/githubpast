@@ -1372,3 +1372,27 @@ god_wills_it_line_one = "The very earth will disown you"
 disown_placement = god_wills_it_line_one.find('disown')
 print(disown_placement)
 ```
+
+Python  provides a string method for including variables in strings. This method is format(). This function takes variables as an argument and includes them in the string that it is run on. We can include {} marks as placeholders for where those variables will be imported.
+
+```python
+# Example 1
+def favorite_song_statement(song, artist):
+  return "My favorite song is {} by {}.".format(song, artist)
+  
+# Example 2
+def poem_title_card(title,poet):
+  return  "The poem \"{}\" is written by {}.".format(title,poet)
+
+print(poem_title_card("I Hear America Singing", "Walt Whitman"))
+
+# Example 3
+
+def poem_description(publishing_date, author, title, original_work):
+  poem_desc = "The poem {title} by {author} was originally published in {original_work} in {publishing_date}.".format(publishing_date = publishing_date , author = author, title = title, original_work = original_work)
+  return poem_desc
+
+
+my_beard_description = poem_description("1974","Shel Silverstein","My Beard","Where the Sidewalk Ends")
+print(my_beard_description)
+```
