@@ -1350,4 +1350,25 @@ love_maybe_full = '\n'.join(love_maybe_lines_stripped)
 print(love_maybe_full)
 ```
 
+Another important function is *replace*. This function takes two arguments and replace all instances of the first argument in a string with the second argument. 
 
+```python
+with_spaces = "You got the kind of loving that can be so smooth"
+with_underscores = with_spaces.replace(' ', '_')
+print(with_underscores) # 'You_got_the_kind_of_loving_that_can_be_so_smooth'
+
+```
+
+There is another string method called *find*. find() takes a string as an argument and searching the string it was run on for that string. It then returns the first index value where that string is located.
+
+```python
+# Example 1
+print('smooth'.find('t')) # => '4'
+print("smooth".find('oo')) # => '2'
+
+# Example 2
+
+god_wills_it_line_one = "The very earth will disown you"
+disown_placement = god_wills_it_line_one.find('disown')
+print(disown_placement)
+```
