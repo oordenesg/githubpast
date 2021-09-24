@@ -1325,8 +1325,29 @@ santana_songs_csv = ','.join(santana_songs)
 print(santana_songs_csv)
 # => 'Oye Como Va,Smooth,Black Magic Woman,Samba Pa Ti,Maria Maria'
 ```
+We can add a new line instead of a comma by just adding \n before the join function
 
+```python
+smooth_fifth_verse_lines = ['Well I\'m from the barrio', 'You hear my rhythm on your radio', 'You feel the turning of the world so soft and slow', 'Turning you \'round and \'round']
+smooth_fifth_verse = '\n'.join(smooth_fifth_verse_lines)
+```
 
+Python provides a great method for cleaning strings: .strip(). Stripping a string removes all whitespace characters from the beginning and end. Consider the following example:
 
+```python
+# Example 1
+featuring = "           rob thomas                 "
+print(featuring.strip()) # => 'rob thomas'
+
+# Example 2
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+
+love_maybe_lines_stripped = []
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+print(love_maybe_full)
+```
 
 
