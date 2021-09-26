@@ -1396,3 +1396,30 @@ def poem_description(publishing_date, author, title, original_work):
 my_beard_description = poem_description("1974","Shel Silverstein","My Beard","Where the Sidewalk Ends")
 print(my_beard_description)
 ```
+
+
+### Modules Python Introduction
+
+In this section, we will learn how to use tools other people have built in Python that are not included automatically for you when you install Python. A common concept is modules. A module is a collection of Python declarations intended broadly to be used a tool. Modules are also often referred to as "libraries" or "packages".  Let's see how to call a module in Python
+
+```python
+from datetime import datetime # calling a module
+current_time = datetime.now() 
+print(current_time)
+```
+
+Another famous module is *random* which allows us to generate number or select items at random. Let's check how to use this library.
+
+```python
+import random
+
+# Create random_list below:
+random_list = [random.randint(1,100) for i in range(101)]
+# Create randomer_number below:
+randomer_number = random.choice(random_list)
+# Print randomer_number below:
+print(randomer_number)
+```
+Python defaults to naming the namespace after the module being imported, but sometimes this name could be ambiguous or lengthy. Sometimes, the module’s name could also conflict with an object you have defined within your local namespace. Fortunately, this name can be altered by aliasing using the as keyword:
+
+
