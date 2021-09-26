@@ -1422,4 +1422,19 @@ print(randomer_number)
 ```
 Python defaults to naming the namespace after the module being imported, but sometimes this name could be ambiguous or lengthy. Sometimes, the module’s name could also conflict with an object you have defined within your local namespace. Fortunately, this name can be altered by aliasing using the as keyword:
 
+```python
+# Example 1
+import module_name as name_you_pick_for_the_module
+
+# Example 2
+import codecademylib3_seaborn
+
+# Add your code below:
+from matplotlib import pyplot as plt
+import random
+numbers_a = range(1,13)
+numbers_b = random.sample(range(1000), 12)
+plt.plot(numbers_a,numbers_b)
+plt.show()
+```
 
