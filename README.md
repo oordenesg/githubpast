@@ -1473,5 +1473,24 @@ students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartog
 subtotal_to_total = {20: 24, 10: 12, 5: 6, 15: 18}
 person = {"name": "Shuri", "age": 18, "family": ["T'Chaka", "Ramonda"]}
 ```
+When using dictionaries, we can use lists as value of an item. However, we cannot use a list as keys of the dictionary. If we try to, we will get an TypeError. 
 
+```python
+children = {"von Trapp":["Johannes", "Rosmarie", "Eleonore"], "Corleone":["Sonny", "Fredo", "Michael"]}
+print(children)
+```
+We can add a single key by using the following syntax dictionary[key] = value. Let's see how add a new value
 
+```python
+# Example 1
+menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+menu["cheesecake"] = 8
+
+# Example 2
+
+animals_in_zoo = {}
+animals_in_zoo['zebras'] = 8
+animals_in_zoo['monkeys'] = 12
+animals_in_zoo['dinosaurs'] = 0
+print(animals_in_zoo)
+```
