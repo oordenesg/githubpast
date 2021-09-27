@@ -1506,3 +1506,21 @@ user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
 user_ids.update({"theLooper":138475,"stringQueen":85739})
 print(user_ids)
 ```
+
+Imagine we have two list that we want to combine into a dictionary. We can do this by using the zip function. Here is an example.
+
+```python
+# Example 1
+names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+heights = [61, 70, 67, 64]
+
+students = {key:value for key, value in zip(names, heights)}
+#students is now {'Jenny': 61, 'Alexus': 70, 'Sam': 67, 'Grace': 64}
+
+# Example 2
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+zipped_drinks = zip(drinks,caffeine)
+drinks_to_caffeine = {key:value for key,value in zipped_drinks}
+print(drinks_to_caffeine)
+```
