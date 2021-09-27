@@ -1494,3 +1494,15 @@ animals_in_zoo['monkeys'] = 12
 animals_in_zoo['dinosaurs'] = 0
 print(animals_in_zoo)
 ```
+In we wanted to add multiple "key:value" pairs to a dictionary, we can use the .update method. 
+
+```python
+# Example 1
+sensors = {"living room": 21, "kitchen": 23, "bedroom": 20}
+sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
+
+# Example 2
+user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
+user_ids.update({"theLooper":138475,"stringQueen":85739})
+print(user_ids)
+```
