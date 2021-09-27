@@ -1452,3 +1452,26 @@ four_decimal_points = Decimal('0.53') * Decimal('0.65')
 print(four_decimal_points)
 ```
 
+### Dictionaries
+
+Dictionaries allow us to stored data in way that we can associate one value with another. Suppose we want to store the prices of varius item solt at cafe:
+
+1. Avocado Toast is 6 dollars
+2. Carrot Juice is 5 dollars
+3. Blueberry Muffin is 2 dollars
+
+In Python, we can use a dictionary to store this information. Let's see how it works.
+
+```python
+menu = {"avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+```
+In general, a dictionary begins and ends with a curly braces { and }. Each item consiste of a key and each key is separated by a comma. When we create dictionary, we can use any type of data. That means we can use strings, lists, integers or even another dictionary as the value associated with a key. We can also mix and match key and value types. For example:
+ For example.
+
+```python
+students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartography": ["Christopher", "Juan", "Marco"], "philosophy": ["Frederica", "Manuel"]}
+subtotal_to_total = {20: 24, 10: 12, 5: 6, 15: 18}
+person = {"name": "Shuri", "age": 18, "family": ["T'Chaka", "Ramonda"]}
+```
+
+
