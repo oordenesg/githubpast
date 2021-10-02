@@ -1524,3 +1524,34 @@ zipped_drinks = zip(drinks,caffeine)
 drinks_to_caffeine = {key:value for key,value in zipped_drinks}
 print(drinks_to_caffeine)
 ```
+
+When we have a dictionary, we can access to the values by using the keys. Let's see how print a value from a dictionary.
+
+```python
+# Example 1
+building_heights = {"Burj Khalifa": 828, "Shanghai Tower": 632, "Abraj Al Bait": 601, "Ping An": 599, "Lotte World Tower": 554.5, "One World Trade": 541.3}
+building_heights["Burj Khalifa"] # It will print 828
+
+# Example 2
+zodiac_elements = {"water": ["Cancer", "Scorpio", "Pisces"], "fire": ["Aries", "Leo", "Sagittarius"], "earth": ["Taurus", "Virgo", "Capricorn"], "air":["Gemini", "Libra", "Aquarius"]}
+print(zodiac_elements['earth'])
+print(zodiac_elements['fire'])
+```
+
+In some case we want to get access to a value that doesn't exist. If this is the case, Python will print an error. However, if we than add the value and we ask again for the same value. We will get it. Check this example:
+
+```python
+zodiac_elements = {"water": ["Cancer", "Scorpio", "Pisces"], "fire": ["Aries", "Leo", "Sagittarius"], "earth": ["Taurus", "Virgo", "Capricorn"], "air":["Gemini", "Libra", "Aquarius"]}
+print(zodiac_elements["energy"]) # It will print an Error
+zodiac_elements['energy'] = "Not a Zodiac element"
+print(zodiac_elements["energy"]) # It will print "Not a Zodiac element"
+```
+
+
+
+
+
+
+
+
+
