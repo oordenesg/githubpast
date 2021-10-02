@@ -6,3 +6,14 @@ playcounts = [78, 29, 44, 21, 89, 5]
 zipped_plays = zip(songs,playcounts)
 plays = {songs:playcounts for songs,playcounts in zipped_plays}
 
+# After printing plays, add a new entry to it. The entry should be for the song "Purple Haze" and the playcount is 1.
+
+plays.update({"Purple Haze": 1})
+
+# This user has caught Aretha Franklin fever and listened to “Respect” 5 more times. Update the value for "Respect" to be 94 in the plays dictionary.
+
+plays['Respect'] = 94
+
+# Create a dictionary called library that has two key: value pairs: key "The Best Songs" with a value of plays, the dictionary you created, key "Sunday Feelings" with a value of an empty dictionary
+
+library  = {"The Best Songs":plays, "Sunday Feelings":{}}
