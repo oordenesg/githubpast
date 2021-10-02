@@ -1547,7 +1547,21 @@ zodiac_elements['energy'] = "Not a Zodiac element"
 print(zodiac_elements["energy"]) # It will print "Not a Zodiac element"
 ```
 
+We can do the same process by using the function *try* and *KeyError*.
 
+```python
+caffeine_level = {"espresso": 64, "chai": 40, "decaf": 0, "drip": 120}
+try:
+  print(caffeine_level['matcha'])
+except KeyError:
+  print("Unknown Caffeine Level") # It will print an Error
+
+caffeine_level["matcha"] = 30 # 
+try:
+  print(caffeine_level['matcha'])
+except KeyError:
+  print("Unknown Caffeine Level")  # It will print 30   
+```
 
 
 
