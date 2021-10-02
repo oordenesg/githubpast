@@ -1563,8 +1563,17 @@ except KeyError:
   print("Unknown Caffeine Level")  # It will print 30   
 ```
 
+We can access to specific values from a dictionary by using the function *get*. This functions has usually two parameters. The key we're looking for and a default value if that key doesn't exist. 
 
+```python
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
 
+tc_id = user_ids.get("teraCoder",100000)
+print(tc_id) # It wil print 100019
+
+stack_id = user_ids.get("superStackSmash",100000)
+print(stack_id) # It will print 100000 since superStackSmash does not exist.
+```
 
 
 
