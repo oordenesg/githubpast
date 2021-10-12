@@ -1601,6 +1601,18 @@ print(available_items)
 print(health_points)
 ```
 
+In some cases, when we work with dictionaries we need to get all the keys of values within it. We can perform this by using some built-in functions or for loops. Let's see an example.
+
+```python
+user_ids = {"teraCoder": 100019, "pythonGuy": 182921, "samTheJavaMaam": 123112, "lyleLoop": 102931, "keysmithKeith": 129384}
+num_exercises = {"functions": 10, "syntax": 13, "control flow": 15, "loops": 22, "lists": 19, "classes": 18, "dictionaries": 18}
+
+users = user_ids.keys() # Get the user_ids keys
+lessons = num_exercises.keys() # Get the num_exercises keys
+
+print(users)
+print(lessons)
+```
 
 
 
