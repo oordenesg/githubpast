@@ -25,7 +25,33 @@ def score_word(word):
   return point_total
 
 
-# Let’s test this function! Create a variable called brownie_points and set it equal to the value returned by the score_word() function with an input of "BROWNIE".
+# 4. Let’s test this function! Create a variable called brownie_points and set it equal to the value returned by the score_word() function with an input of "BROWNIE".
 # We expect the word BROWNIE to earn 15 points
 brownie_points = score_word("BROWNIE")
 print(brownie_points)
+
+
+
+# 5. Create a dictionary called player_to_words that maps players to a list of the words they have played. This table represents the data to transcribe into your dictionary:
+player_to_word = {"player1":['BLUE','TENNIS','EXIT'],"wordNerd":["EARTH","EYES","MACHINE"],"Lexi Con":["ERASER","BELLY","HUSKY"],"Prof Reader":["ZAP","COMA","PERIOD"]}
+
+print(player_to_word)
+
+# 6. Create an empty dictionary called player_to_points and tterate through the items in player_to_words. Call each player player and each list of words words.
+# Within your loop, create a variable called player_points and set it to 0.
+
+player_to_points = {}
+
+for key,value in player_to_word.items():
+  player_points = 0
+
+# 7. Within the loop, create another loop that goes through each word in words and adds the value of score_word() with word as an input.
+# After the inner loop ends, set the current player value to be a key of player_to_points, with a value of player_points.
+for player,word in player_to_word.items():
+  player_points = 0
+  for i in word:
+    player_points += score_word(i)
+  player_to_points[player] = player_points
+
+
+
