@@ -1652,3 +1652,16 @@ for item,value in spread.items():
   
 ```
 
+## Reading a File
+
+By using Python we can save a lot of time by developing functions that make our work easier. However, in some cases we need to work with files from other sources like excel, notepad or even pdf. In Python we can use some built-in functions to handle these files and then make all the necessary changes. 
+
+We can use the function with to open different files. Let's see an example.
+
+```python
+with open('real_cool_document.txt') as cool_doc:
+  cool_contents = cool_doc.read()
+print(cool_contents)
+```
+
+This opens a file object called cool_doc and creates a new indented block where you can read the contents of the opened file. We then read the contents of the file cool_doc using cool_doc.read() and save the resulting string into the variable cool_contents. Then we print cool_contents, which outputs the statement Wowsers!.
