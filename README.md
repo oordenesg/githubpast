@@ -1679,3 +1679,13 @@ with open('how_many_lines.txt') as lines_doc:
   for line in lines_doc.readlines():
     print(line)
 ```
+
+If we want to print just the first line of our text, we can use the *readline* function. However, in this case the for loop is not necessary.
+
+```python
+with open('just_the_first.txt') as first_line_doc:
+  first_line = first_line_doc.readline()
+  print(first_line)
+```
+
+
