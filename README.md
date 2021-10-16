@@ -1664,4 +1664,18 @@ with open('real_cool_document.txt') as cool_doc:
 print(cool_contents)
 ```
 
-This opens a file object called cool_doc and creates a new indented block where you can read the contents of the opened file. We then read the contents of the file cool_doc using cool_doc.read() and save the resulting string into the variable cool_contents. Then we print cool_contents, which outputs the statement Wowsers!.
+This opens a file object called cool_doc and creates a new indented block where you can read the contents of the opened file. We then read the contents of the file cool_doc using cool_doc.read() and save the resulting string into the variable cool_contents. Then we print cool_contents, which outputs the statement Wowsers!. Let's see a new example
+
+```python
+with open('welcome.txt') as text_file:
+  text_data = text_file.read()
+  print(text_data)
+```
+
+We can also save each line of a text file by using a similar function called *readlines*. This function reads text files line by line insted of having the whole thing.
+
+```python
+with open('how_many_lines.txt') as lines_doc:
+  for line in lines_doc.readlines():
+    print(line)
+```
