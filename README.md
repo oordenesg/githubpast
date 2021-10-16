@@ -1688,4 +1688,11 @@ with open('just_the_first.txt') as first_line_doc:
   print(first_line)
 ```
 
+What if we want to create a file using Python?. Our *open* built-in function needs another argument to open a file to write to. We have add a second argument "W". Additionally, in this case we need the function *write*. The structure of the code is quite similar with previous one. We just need to add this new *write* function.
+
+```python
+with open('bad_bands.txt','w') as bad_bands_doc:
+  bad_bands_doc.write("bad_bands")
+```
+
 
