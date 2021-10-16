@@ -1687,13 +1687,25 @@ with open('just_the_first.txt') as first_line_doc:
   first_line = first_line_doc.readline()
   print(first_line)
 ```
-
-
 What if we want to create a file using Python?. Our *open* built-in function needs another argument to open a file to write to. We have add a second argument "W". Additionally, in this case we need the function *write*. The structure of the code is quite similar with previous one. We just need to add this new *write* function.
 
 ```python
 with open('bad_bands.txt','w') as bad_bands_doc:
   bad_bands_doc.write("bad_bands")
 ```
+We can append strings to a file by using the same *open* function by with a different argument. To do this, we just need to add *a* as a second argument within the *open* function. Let's see an example.
 
+```python
+with open('cool_dogs.txt','a') as cool_dogs_file:
+  cool_dogs_file.write('Air Buddy')
+```
 
+By using the syntax * with * we can open a file and make further modifications, we can just use the open function without adding the syntax *with*. To do this it is necessary to add a new function called *close*. 
+
+```python
+fun_cities_file = open('fun_cities.txt', 'a')
+# We can now append a line to "fun_cities".
+fun_cities_file.write("Montréal")
+# But we need to remember to close the file
+fun_cities_file.close()
+```
