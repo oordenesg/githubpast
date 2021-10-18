@@ -1730,3 +1730,11 @@ with open('users.csv', newline='') as users_csv:
   for row in user_reader:
     list_of_email_addresses.append(row['Email'])
  ```
+Let's see a new example in terms of how to read a csv files and print all the lines using a foor loop. 
+
+```
+with open("cool_csv.csv") as cool_csv_file:
+  cool_csv_dict = csv.DictReader(cool_csv_file)
+  for row in cool_csv_dict:
+    print(row['Cool Fact']) 
+```
