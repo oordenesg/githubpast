@@ -1738,3 +1738,14 @@ with open("cool_csv.csv") as cool_csv_file:
   for row in cool_csv_dict:
     print(row['Cool Fact']) 
 ```
+
+In most cases csv files have delimiters. These are commas, semicolons, spaces or any other different delimiter. These delimiters indicate where the different values start and stop. We can use the same structure to open an read csv files. 
+
+```python
+import csv
+ 
+with open('addresses.csv', newline='') as addresses_csv:
+  address_reader = csv.DictReader(addresses_csv, delimiter=';')
+  for row in address_reader:
+    print(row['Address'])
+```
