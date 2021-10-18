@@ -1718,3 +1718,15 @@ Text files aren’t the only thing that Python can read, but they’re the only 
 with open("logger.csv") as log_csv_file:
   print(log_csv_file.read())
 ```
+
+Even though we can read these lines as text without a problem, there are ways to access the data in a format better suited for programming purposes. In Python we can convert that data into a dictionary using the csv library’s DictReader object. Here’s how we’d create a list of the email addresses of all of the users in the above table:
+
+```python
+import csv
+ 
+list_of_email_addresses = []
+with open('users.csv', newline='') as users_csv:
+  user_reader = csv.DictReader(users_csv)
+  for row in user_reader:
+    list_of_email_addresses.append(row['Email'])
+ ```
