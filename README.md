@@ -1797,3 +1797,16 @@ with open('output.csv', 'w') as output_csv:
     output_writer.writerow(item)
 ```
 
+What happend if we want to open a JSON File. We can use Python to do this but first it is importan to defined what is a JSON file. JSON, an abbreviation of JavaScript Object Notation, is a file format inspired by the programming language JavaScript. The name, like CSV is a bit of a misnomer — some JSON is not valid JavaScript (and plenty of JavaScript is not valid JSON). Python comes with a json package that will help us parse JSON files into actual Python dictionaries. Suppose we have a JSON file like the following:
+
+```python
+purchase_14781239.json
+
+{
+  'user': 'ellen_greg',
+  'action': 'purchase',
+  'item_id': '14781239',
+}
+```
+
+
