@@ -1813,10 +1813,30 @@ if we want to open this file, we can use a function using the same *open* syntax
 
 ```python
 import json
- 
 with open('purchase_14781239.json') as purchase_json:
   purchase_data = json.load(purchase_json)
  
 print(purchase_data['user'])
 
+```
+We can do similar operations like converting a dictionary to a JSON file by using the "write" parameter within the *open* function.
+
+```python
+import json
+ 
+with open('output.json', 'w') as json_file:
+  json.dump(turn_to_json, json_file)
+```
+
+Let's see a second exampl
+
+```python
+data_payload = [
+  {'interesting message': 'What is JSON? A web application\'s little pile of secrets.',
+   'follow up': 'But enough talk!'}
+]
+
+import json
+with open('data.json', 'w') as data_json:
+  json.dump(data_payload,data_json)
 ```
