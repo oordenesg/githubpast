@@ -1809,4 +1809,14 @@ purchase_14781239.json
 }
 ```
 
+if we want to open this file, we can use a function using the same *open* syntax. Let's see how to do this.
 
+```python
+import json
+ 
+with open('purchase_14781239.json') as purchase_json:
+  purchase_data = json.load(purchase_json)
+ 
+print(purchase_data['user'])
+
+```
