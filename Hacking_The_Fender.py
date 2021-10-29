@@ -32,14 +32,11 @@ with open("compromised_users.txt","w") as compromised_user_file:
 # 4. Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender.  
 # Your boss needs to know that you were successful in retrieving that compromised data. We’ll need to send him an encoded message over the internet. Let’s use JSON to do that.
 # First we’ll need to import the json module.
-
-
-with open("boss_message.json", "w") as boss_message:
-  boss_message_dict = {
-    "recipient" : "The Boss",
-    "message" : "Mission Success"
-  }
-  json.dump(boss_message_dict, boss_message)
+# Open a new JSON file in write-mode called boss_message.json. Save the file object to the variable boss_message.
+# Create a Python dictionary object within your with statement that relays a boss message. Call this boss_message_dict.
+# Give it a "recipient" key with a value "The Boss".
+# Also give it a "message" key with the value "Mission Success".
+# Write out boss_message_dict to boss_message using json.dump().
 
 with open("boss_message.json", "w") as boss_message:
   boss_message_dict = {
@@ -48,6 +45,10 @@ with open("boss_message.json", "w") as boss_message:
   }
   json.dump(boss_message_dict, boss_message)
 
+# 5. Now that we’ve safely recovered the compromised users we’ll want to remove the "passwords.csv" file completely.
+# Create a new with block and open "new_passwords.csv" in write-mode. Save the file object to a variable called new_passwords_obj.
+# Enemy of the people, Slash Null, is who we want The Fender to think was behind this attack. He has a signature, whenever he hacks someone he adds this signature to one of the files he touches. Here is the signature:
+# Enemy of the people, Slash Null, is who we want The Fender to think was behind this attack. He has a signature, whenever he hacks someone he adds this signature to one of the files he touches. Here is the signature:
 with open("new_passwords.csv", "w") as new_passwords_obj:
   slash_null_sig = """
   _  _     ___   __  ____
