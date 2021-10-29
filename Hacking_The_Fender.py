@@ -21,6 +21,13 @@ with open("passwords.csv") as password_file:
 
 # Exit out of your with block for "passwords.csv". We have all the data we need from that file.
 # Start a new with block, opening a file called compromised_users.txt. Open this file in write-mode, saving the file object as compromised_user_file.
+# Inside the new context-managed block opened by the with statement start a new for loop.Iterate over each of your compromised_users.
+# Write the username of each compromised_user in compromised_users to compromised_user_file.
 
 with open("compromised_users.txt","w") as compromised_user_file:
+  for compromised_user in compromised_users:
+    compromised_user_file.write(compromised_user)
+
+  
+
   
