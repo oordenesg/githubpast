@@ -19,3 +19,8 @@ with open("passwords.csv") as password_file:
 
 
 
+# Exit out of your with block for "passwords.csv". We have all the data we need from that file.
+# Start a new with block, opening a file called compromised_users.txt. Open this file in write-mode, saving the file object as compromised_user_file.
+
+with open("compromised_users.txt","w") as compromised_user_file:
+  
