@@ -1840,3 +1840,6 @@ import json
 with open('data.json', 'w') as data_json:
   json.dump(data_payload,data_json)
 ```
+
+## INTRODUCTION TO CLASSES
+### Types
