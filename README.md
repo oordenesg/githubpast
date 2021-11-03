@@ -1868,3 +1868,15 @@ class Facade:
 facade_1 = Facade() # creating an instance
 
 ```
+
+A class instance is also called an object. The pattern of defining classes and creating objects to represent the responsibilities of a program is known as Object Oriented Programming or OOP. We can check by using the previous function called *type* 
+
+```python
+# Using our previous function
+class Facade:
+  pass
+
+facade_1 = Facade()
+facade_1_type = type(facade_1)
+print(facade_1_type) # output will be <class '__main__.Facade'>
+```
