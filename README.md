@@ -1842,4 +1842,29 @@ with open('data.json', 'w') as data_json:
 ```
 
 ## INTRODUCTION TO CLASSES
+
 ### Types
+
+In Python there are different ways to store data. A float is a different kind of number from integer. A boolean is a different value from a string. We can say something similar with list and dict.  Using Python, we can check the *type* of a variable by using the *type()* function. 
+
+```python
+print(type(5)) # <class 'int'>
+
+my_dict = {} 
+print(type(my_dict)) # <class 'dict'>
+
+my_list = []
+print(type(my_list)) # <class 'list'>
+```
+
+A class is a template for a data type. It describes the kinds of information that class will hold and how a programmer will interact with that data. To create a *class* we can use a defined structure. A class, can only work if we create an instance of the class. We can defined this as Instantiating. Instantiating a class looks a lot like calling a function.
+
+
+```python
+# Class Structure
+class Facade:
+  pass
+
+facade_1 = Facade() # creating an instance
+
+```
