@@ -1880,3 +1880,16 @@ facade_1 = Facade()
 facade_1_type = type(facade_1)
 print(facade_1_type) # output will be <class '__main__.Facade'>
 ```
+Imagine that we want to use the sama data every single instance of class. In this case we need to defined a class variable. We can do this by adding a variable within our class definition.
+
+```python
+# Example 
+class Musician:
+  title = "Rockstar"
+ 
+drummer = Musician()
+print(drummer.title) # prints "Rockstar"
+
+
+````
+
