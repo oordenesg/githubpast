@@ -1909,6 +1909,7 @@ pipi_pitbull.time_explanation()
 We can also add more than one argument to our metho. Let' see how to do it
 
 ```python
+# Example 1
 class DistanceConverter:
   kms_in_a_mile = 1.609
   def how_many_kms(self, miles):
@@ -1917,6 +1918,21 @@ class DistanceConverter:
 converter = DistanceConverter()
 kms_in_5_miles = converter.how_many_kms(5)
 print(kms_in_5_miles)
+
+# Example 2
+class Circle:
+  pi = 3.14
+  def area(self,radius):
+    area = (Circle.pi)*radius**2
+    return area
+
+
+circle = Circle()
+pizza_area = circle.area(12/2)
+teaching_table_area = circle.area(36/2)
+round_room_area = circle.area(11460/2)
 ```
+
+There are methods that have special behaviour within a Python Class.  They are called dunder methodd. The first one we're going to use is the __init__() method. This method is used to initialize a newly created object. It is called every time the class is instantiated.
 
 
