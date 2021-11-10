@@ -1890,6 +1890,33 @@ class Musician:
 drummer = Musician()
 print(drummer.title) # prints "Rockstar"
 
-
 ````
+
+Another important element within classes are Methods. They are functions that are defined as part of a class. The first arguemtn in a method is always the object that is calling the method. It is important to name the first argument self and methods always have at least this one argument.  To define a method, we use the same structure of functions, except that they are indented to be part of the class. Let's see an examplee
+
+```python
+class Dog:
+  dog_time_dilation = 7
+ 
+  def time_explanation(self):
+    print("Dogs experience {} years for every 1 human year.".format(self.dog_time_dilation))
+ 
+pipi_pitbull = Dog()
+pipi_pitbull.time_explanation()
+# Prints "Dogs experience 7 years for every 1 human year."
+```
+
+We can also add more than one argument to our metho. Let' see how to do it
+
+```python
+class DistanceConverter:
+  kms_in_a_mile = 1.609
+  def how_many_kms(self, miles):
+    return miles * self.kms_in_a_mile
+ 
+converter = DistanceConverter()
+kms_in_5_miles = converter.how_many_kms(5)
+print(kms_in_5_miles)
+```
+
 
