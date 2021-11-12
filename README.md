@@ -1978,3 +1978,6 @@ print(working_string)
 ```
 Instance variables and class variables are both accessed similarly in Python. This is no mistake, they are both considered attributes of an object. If we attempt to access an attribute that is neither a class variable nor an instance variable of the object Python will throw an AttributeError.
 
+What if we aren’t sure if an object has an attribute or not? *hasattr* will return True if an object has a given attribute and False otherwise. If we want to get the actual value of the attribute, the function *getattr* will return the value of a given object and attribute. The function hasattr has two parameters, the object and the attribute. On the other hand, getattr has three parameters. There are object, attribute an default (the value that is returned if the attribute does not exist. This parameter is optional)
+
+
