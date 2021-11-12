@@ -1959,4 +1959,22 @@ class Circle:
 teaching_table = Circle(36)
 ```
 
+In Python, each instance of a class can hold different kinds of data. The data held by an object is referred to as a instance variable. Let's define a class called FakeDict with two different objects fake_dict1 and fake_dict2. 
+
+```python
+class FakeDict:
+  pass
+
+fake_dict1 = FakeDict()
+fake_dict2 = FakeDict()
+ 
+fake_dict1.fake_key = "This works!"
+fake_dict2.fake_key = "This too!"
+ 
+# Let's join the two strings together!
+working_string = "{} {}".format(fake_dict1.fake_key, fake_dict2.fake_key)
+print(working_string)
+# prints "This works! This too!"
+```
+Instance variables and class variables are both accessed similarly in Python. This is no mistake, they are both considered attributes of an object. If we attempt to access an attribute that is neither a class variable nor an instance variable of the object Python will throw an AttributeError.
 
