@@ -1980,4 +1980,18 @@ Instance variables and class variables are both accessed similarly in Python. Th
 
 What if we aren’t sure if an object has an attribute or not? *hasattr* will return True if an object has a given attribute and False otherwise. If we want to get the actual value of the attribute, the function *getattr* will return the value of a given object and attribute. The function hasattr has two parameters, the object and the attribute. On the other hand, getattr has three parameters. There are object, attribute an default (the value that is returned if the attribute does not exist. This parameter is optional)
 
+```python
+
+an_we_count_it = [{'s': False}, "sassafrass", 18, ["a", "c", "s", "d", "s"]]
+
+
+for element in can_we_count_it:
+  if hasattr(element,"count"):
+    print(str(type(element)) + " has the count attribute!")
+  else:
+    print(str(type(element)) + " does not have the count attribute :(")
+
+# dictionaries and integers both do not have a count attribute, while strings and lists do
+
+```
 
