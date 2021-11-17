@@ -2046,3 +2046,17 @@ print(medium_pizza.circumference())
 print(teaching_table.circumference())
 print(round_room.circumference())
 ```
+
+In Python, it’s possible for an object to have some attributes that are not explicitly defined in an object’s constructor. We can use the function *dir* to investigate the attributes. This function is short for directory and it shows an organized presentation of object attributes. 
+
+```python
+class FakeDict:
+  pass
+ 
+fake_dict = FakeDict()
+fake_dict.attribute = "Cool"
+ 
+dir(fake_dict)
+# Prints ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__()', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'attribute']
+
+```
