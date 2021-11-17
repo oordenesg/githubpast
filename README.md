@@ -1995,3 +1995,33 @@ for element in can_we_count_it:
 
 ```
 
+We can use dictionaries to store key-value pairs, however objects for that purpose is not really useful. In that case, tnstance variables are more powerful when you can guarantee a rigidity to the data the object is holding. This convenience is most apparent when the constructor creates the instance variables, using the arguments passed in to it. If we were creating a search engine, and we wanted to create classes for each separate entry we could return.  Let's see how to do it
+
+```python
+# Example 1: Not best one
+class SearchEngineEntry:
+  def __init__(self, url):
+    self.url = url
+ 
+mywebiste = SearchEngineEntry("www.myWebise.com")
+wikipedia = SearchEngineEntry("www.anotherWebsite.org")
+ 
+print(mywebiste.url) # prints "www.myWebise.com"
+ 
+print(wikipedia.url) # prints "www.wikipedia.org"
+
+# Example 2 
+
+class SearchEngineEntry:
+  secure_prefix = "https://"
+  def __init__(self, url):
+    self.url = url
+ 
+  def secure(self):
+    return "{prefix}{site}".format(prefix=self.secure_prefix, site=self.url)
+ 
+mywebiste = SearchEngineEntry("www.myWebise.com")
+wikipedia = SearchEngineEntry("www.anotherWebsite.org")
+print(mywebiste.secure()) # prints "www.myWebise.com"
+print(wikipedia.secure()) # prints "https://www.wikipedia.org"
+```
