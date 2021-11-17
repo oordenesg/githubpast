@@ -2025,3 +2025,24 @@ wikipedia = SearchEngineEntry("www.anotherWebsite.org")
 print(mywebiste.secure()) # prints "www.myWebise.com"
 print(wikipedia.secure()) # prints "https://www.wikipedia.org"
 ```
+Let's see a second example
+
+```python
+class Circle:
+  pi = 3.14
+  def __init__(self, diameter):
+    print("Creating circle with diameter {d}".format(d=diameter))
+    # Add assignment for self.radius here:
+    self.radius = diameter/2
+  def circumference(self):
+    return 2*Circle.pi*self.radius
+
+
+medium_pizza = Circle(12)
+teaching_table = Circle(36)
+round_room = Circle(11460)
+
+print(medium_pizza.circumference())
+print(teaching_table.circumference())
+print(round_room.circumference())
+```
