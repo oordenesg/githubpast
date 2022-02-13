@@ -65,3 +65,13 @@ class HighSchool(School):
   def __repr__(self):
     return f"These are the sports {self.sportsTeams}"
 
+
+  
+ # Try Class
+
+mySchool = School("Codecademy", "high", 100)
+print(mySchool)
+print(mySchool.get_name())
+print(mySchool.get_level())
+mySchool.set_numberOfStudents(200)
+print(mySchool.get_numberofstudents())
