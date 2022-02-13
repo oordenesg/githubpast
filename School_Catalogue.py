@@ -67,7 +67,7 @@ class HighSchool(School):
 
 
   
- # Try Class
+ # Try School
 
 mySchool = School("Codecademy", "high", 100)
 print(mySchool)
@@ -75,3 +75,14 @@ print(mySchool.get_name())
 print(mySchool.get_level())
 mySchool.set_numberOfStudents(200)
 print(mySchool.get_numberofstudents())
+
+# Try PrimarySchool
+testSchool = PrimarySchool("Codecademy",300,"Pickup Allowed")
+print(testSchool.get__primarySchool())
+print(testSchool)
+
+# Try High School
+
+testHSchool = HighSchool("Codecademy High", 500, ["Tennis", "Basketball"])
+print(testHSchool.get_highSchool())
+print(testHSchool)
